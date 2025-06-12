@@ -1,8 +1,8 @@
 @charset "utf-8";
 
-/* faq_payment.html */
+/* faq_menu.html */
 
-/* SECTION.PAYMENT******************************** */
+/* SECTION.payment******************************** */
 
 section.payment {
     margin: 200px auto 150px;
@@ -34,6 +34,7 @@ section.payment {
 .payment .faq-wrap {
     margin: 50px 0;
 }
+
 .payment .faq-wrap .faq-box {
     padding: 39px 59px;
     border-radius: 15px;
@@ -43,11 +44,19 @@ section.payment {
     justify-content: space-between;
     column-gap: 60px;
     margin-bottom: 50px;
+
+    cursor: pointer;
+
 }
 .payment .faq-wrap .on, .payment .faq-wrap .faq-box:hover {
     padding: 36px 56px;
     border: 4px solid #008278;
 }
+
+.payment .faq-wrap .on {
+    cursor: default;
+}
+
 /* .q-box, .a-box 공통 label,txt */
 .payment .faq-wrap .faq-box .qna .label {
     margin-right: 35px;
@@ -74,7 +83,6 @@ section.payment {
     margin-top: 40px;
     padding-top: 40px;
     border-top: 1px solid rgba(51,51,51,0.5);
-    display: none;
 }
 .payment .faq-wrap .on .qna .a-box {
     display: flex;
@@ -84,12 +92,18 @@ section.payment {
     font-size: 18px;
     line-height: 30px;
 }
-/* 한줄 txt line-height 조절 */
-.payment .faq-wrap .faq-box:nth-child(3) .a-box .txt { line-height: 50px; }
-.payment .faq-wrap .faq-box:nth-child(6) .a-box .txt { line-height: 50px; }
+.payment .faq-wrap .faq-box .qna .a-box .txt .link-txt {
+    font-size: 18px;
+    line-height: 30px;
+    color: #008278;
+}
+.payment .faq-wrap .faq-box .qna .a-box .txt .link-txt:hover {
+    text-decoration: underline;
+}
 
 .payment .faq-wrap .faq-box .accordion-arrow {
     width: 40px;
+
 }
 .payment .faq-wrap .faq-box .accordion-arrow img {
     display: block;
