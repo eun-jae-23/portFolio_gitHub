@@ -37,7 +37,7 @@ main {
     position: relative;
     /* main .mid-img의 기준 */
 
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 main .img-box {

@@ -1,5 +1,4 @@
 //index.html
-//ver3
 
 $(function () {
 
@@ -7,7 +6,13 @@ $(function () {
     headDgnChg();
 
     //main
-    //mainCycle();
+    //mainSlide();
+    //$('.pager').hide();
+    //임시
+    $('main .txt-box ul li').eq(0).show();
+    $('main .mid-img ul li').eq(0).show();
+    
+
 
     //article
     menuBtnSrc();
@@ -26,16 +31,21 @@ $(function () {
 
 
 
+
 //// 전역함수, 전역변수 모음 //////////////////////////////////////////
 
 /************ header 영역 시작 **************************************/
+
+
+
 // headDgnChg();
 // 헤더 디자인 변경 함수
+
 function headDgnChg() {
     // 전역 변수로 상태 관리
     let currentState = false;
     let winH = $(window).height();
-    
+
     // CSS 클래스 정의
     const headerClasses = {
         scrolled: 'header-scrolled',
@@ -49,7 +59,7 @@ function headDgnChg() {
     // 이벤트 핸들러 함수
     function handleScroll() {
         const currentScroll = $(window).scrollTop();
-        
+
         if (currentScroll > winH && !currentState) {
             $('header h1 img').removeClass('on').eq(0).addClass('on');
             $('header')
@@ -67,15 +77,93 @@ function headDgnChg() {
 
     // 이벤트 바인딩 (한 번만)
     $(window)
-        .on('resize', function() {
+        .on('resize', function () {
             winH = $(window).height();
         })
         .on('scroll', handleScroll);
 }
 
-/************  main 영역 시작 **************************************/
 
-// mainCycle();
+
+
+
+/************  main 영역 시작 **************************************/
+//변수
+let page = 0;
+let totalPgIdx = $('main .img-box ul li').length; //3
+let liH = $('main .img-box ul li').height();
+const bgColor = ['#008278', '#f1a94b', '#a2b570'];
+
+
+
+/* 
+function topMove(){
+
+    page++;
+    console.log('현재 슬라이드 인덱스: ' + page);
+
+    // 제어문 등장! - 변경된 page값이 적용되기 전에 검사!
+    if(page === 4){
+
+        //위치값 리셋!
+        $('main .img-box ul').css({
+            top: 0
+        });
+
+        //다음 페이지 이동을 위한 page 변수값 변경
+        //현재 보고 있는 슬라이드는 1번 내용, 2번 슬라이드를 보기 위해 2번 인덱스 번호로 변경
+        page = 1;
+        console.log('변경된 page값: ' + page);
+    }
+
+    $('main .img-box ul').animate({
+        top: -(liH*page)
+    }, 800);
+
+}
+ */
+// autoSlide();
+/* 
+function autoSlide() {
+    //page 변수 이용하여 아래 내용 구현
+    //최초실행
+    $('main .txt-box ul li').hide();
+    $('main .txt-box ul li').eq(0).fadeIn(500);
+    $('main .mid-img ul li').hide();
+    $('main .mid-img ul li').eq(0).fadeIn(500);
+
+    page++;
+    if (page >= totalPgIdx) {
+        page = 0;
+    }
+
+    //좌측 이미지만 슬라이드 애니메이션
+    $('main .img-box ul').animate({
+        marginTop: -(liH * page)
+    }, 800, function() {
+        // 텍스트 박스 업데이트
+        $('main .txt-box ul li').hide();
+        $('main .txt-box ul li').eq(page).fadeIn(500);
+        
+        // 중앙 이미지 업데이트
+        $('main .mid-img ul li').hide();
+        $('main .mid-img ul li').eq(page).fadeIn(500);
+
+        //.txt-box의 배경이미지는 배열 bgColor에서 가져오기
+        $('main .txt-box').css('background-color', bgColor[page]);
+    });
+
+
+    //중앙 이미지와 우측 텍스트는 fade 사용해서 변경
+
+}
+ */
+
+
+
+
+/* 
+// mainCycle(); -> 실행X
 // 메인 영역 자동 슬라이드 함수
 function mainCycle() {
     // 전역 변수 선언
@@ -181,6 +269,7 @@ function mainCycle() {
     initMainSlide();
     startAutoSlide();
 }
+ */
 
 /************  <main> 영역 끝 **************************************/
 
