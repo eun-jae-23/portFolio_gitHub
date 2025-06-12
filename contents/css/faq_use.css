@@ -95,10 +95,14 @@ section.use {
 .faq-box .a-box .faq-links .txt {
     color: #008278;
 }
-.use .faq-wrap .faq-box .accordion-arrow {
+.use .faq-wrap .faq-box .btn-wrap {
     width: 40px;
 }
-.use .faq-wrap .faq-box .accordion-arrow img {
+.use .faq-wrap .faq-box .btn-wrap .btn-arrow {
+    display: block;
+    width: 100%;
+}
+.use .faq-wrap .faq-box .btn-wrap .btn-arrow img {
     display: block;
     width: 100%;
     cursor: pointer;

@@ -33,5 +33,8 @@ function accordionBox() {
 
     });
 
+    //이벤트 발생 : 
+    $(this)
+
 
 }

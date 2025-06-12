@@ -101,11 +101,14 @@ section.menu {
     text-decoration: underline;
 }
 
-.menu .faq-wrap .faq-box .accordion-arrow {
+.menu .faq-wrap .faq-box .btn-wrap {
     width: 40px;
-
 }
-.menu .faq-wrap .faq-box .accordion-arrow img {
+.menu .faq-wrap .faq-box .btn-wrap .btn-arrow {
+    display: block;
+    width: 100%;
+}
+.menu .faq-wrap .faq-box .btn-wrap .btn-arrow img {
     display: block;
     width: 100%;
     cursor: pointer;

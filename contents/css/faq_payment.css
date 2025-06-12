@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-/* faq_menu.html */
+/* faq_payment.html */
 
 /* SECTION.payment******************************** */
 
@@ -101,11 +101,14 @@ section.payment {
     text-decoration: underline;
 }
 
-.payment .faq-wrap .faq-box .accordion-arrow {
+.payment .faq-wrap .faq-box .btn-wrap {
     width: 40px;
-
 }
-.payment .faq-wrap .faq-box .accordion-arrow img {
+.payment .faq-wrap .faq-box .btn-wrap .btn-arrow {
+    display: block;
+    width: 100%;
+}
+.payment .faq-wrap .faq-box .btn-wrap .btn-arrow img {
     display: block;
     width: 100%;
     cursor: pointer;
