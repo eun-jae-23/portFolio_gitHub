@@ -1,0 +1,111 @@
+@charset "utf-8";
+
+/* app.html */
+
+/* SECTION.APP*********************************************************** */
+
+section.app {
+    margin-top: 200px;
+}
+section.app .download {
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+section.app .download .box {
+    border: 1px solid #008278;
+    border-radius: 10px;
+    padding: 70px 60px;
+    box-sizing: border-box;
+}
+section.app .download .box img {
+    display: block;
+    width: 70px;
+    margin-bottom: 10px;
+}
+section.app .download .box h4 {
+    margin-bottom: 30px;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 62px;
+    color: #008278;
+}
+section.app .download .box a {
+    display: inline-block;
+    padding: 16px 40px;
+    border: 1px solid #5d5d5d;
+    border-radius: 50px;
+    box-sizing: border-box;
+    color: #5d5d5d;
+    font-size: 22px;
+    line-height: 27px;
+    transition: all 0.3s;
+}
+section.app .download .box a:hover {
+    border: 1px solid #008278;
+    color: #fff;
+    background-color: #008278;
+}
+
+
+section.app .salady-order {
+    margin-bottom: 100px;
+    border: 1px solid #008278;
+    padding: 60px 0 60px 60px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+section.app .salady-order .title-wrap {}
+section.app .salady-order .title-wrap .title {
+    font-family: 'RiaSans-ExtraBold';
+    margin: 30px 0;
+    font-size: 50px;
+    line-height: 72px;
+    color: #008278;
+}
+section.app .salady-order .title-wrap .des {
+    color: #5d5d5d;
+    font-size: 22px;
+    line-height: 140%;
+}
+section.app .salady-order .step-wrap {
+    display: grid;
+    grid-template-columns: repeat(3,328px);
+    column-gap: 50px;
+    text-align: center;
+}
+section.app .salady-order .step-wrap .step {
+    width: 328px;
+    padding: 30px;
+    padding-top: 0;
+    box-sizing: border-box;
+    color: #008278;
+    position: relative; /* .txt-wrap::after의 기준 */
+}
+section.app .salady-order .step-wrap .step img {
+    display: block;
+    width: 100%;
+    margin-bottom: 16px;
+}
+section.app .salady-order .step-wrap .step~.step .txt-wrap::after {
+    content: url(../../common-img/common_icon_chevron-green_right.png);
+    position: absolute;
+    left: -25px;
+    bottom: 52px;
+    transform: translateX(-50%);
+}
+section.app .salady-order .step-wrap .step .txt-wrap .step-num {
+    font-family: 'RiaSans-Regular';
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 10px;
+}
+section.app .salady-order .step-wrap .step .txt-wrap .txt {
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 35px;
+}

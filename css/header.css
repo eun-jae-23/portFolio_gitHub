@@ -1,0 +1,129 @@
+@charset "utf-8";
+
+/* header.css */
+header {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+}
+
+header.header-default {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+header.header-default .nav-wrap nav.gnb .gnb-wrap .gnb-box .gnb-name {
+    color: #fff;
+}
+
+header.header-scrolled {
+    background-color: #fff;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.05);
+}
+
+header.header-scrolled .nav-wrap nav.gnb .gnb-wrap .gnb-box .gnb-name {
+    color: #008278;
+}
+
+.header-wrap {
+    max-width: 1460px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    width: 190px;
+}
+header h1 a {
+    display: block;
+}
+header h1 a img {
+    width: 100%;
+    display: none;
+}
+header h1 a img.on {
+    display: block;
+}
+
+header .nav-wrap {
+    display: flex;
+    align-items: center;
+}
+
+header .nav-wrap nav.gnb {
+    display: flex;
+    justify-content: space-between;
+}
+header .nav-wrap nav.gnb .gnb-wrap {
+    display: flex;
+    margin-right: 25px;
+}
+header .nav-wrap nav.gnb .gnb-wrap .gnb-box {
+    padding: 0 25px;
+    position: relative; /* .lnb의 기준 */
+}
+header .nav-wrap nav.gnb .gnb-wrap .gnb-box .gnb-name {
+    font-family: 'SUIT Variable', sans-serif;
+    font-weight: 800;
+    color: #008278;
+    font-size: 22px;
+    text-transform: uppercase;
+    line-height: 100px;
+}
+header .nav-wrap nav.gnb .gnb-wrap .gnb-box .gnb-name:hover {
+    text-decoration: underline;
+}
+
+
+
+header .nav-wrap nav.gnb .gnb-wrap .gnb-box .lnb {
+    position: absolute;
+    left: 25px;
+    top: 94px;
+    width: 200px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 5px;
+}
+header .nav-wrap nav.gnb .gnb-wrap .gnb-box .lnb li {}
+header .nav-wrap nav.gnb .gnb-wrap .gnb-box .lnb li~li {
+    margin-top: 20px;
+}
+header .nav-wrap nav.gnb .gnb-wrap .gnb-box .lnb li a {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 800;
+    color: #333;
+}
+
+
+header .nav-wrap nav.siteMap .allMenu {
+    cursor: pointer;
+}
+header .nav-wrap nav.siteMap .allMenu span {
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #008278;
+    border-radius: 1px;
+}
+header .nav-wrap nav.siteMap .allMenu span:nth-child(2) {
+    margin: 9px 0;
+}
+
+/* 사이트맵 디자인 임시 숨김처리 - 신세계푸드 참고해서 피그마로 만든 후 디자인 입히기 (html 마크업은 완성함) */
+header .nav-wrap nav.siteMap .gnb-wrap {
+    display: none;
+}
+header .nav-wrap nav.siteMap .gnb-wrap .gnb-box {}
+nav.siteMap .gnb-wrap .gnb-box .gnb-name {}
+nav.siteMap .gnb-wrap .gnb-box .lnb {}
+nav.siteMap .gnb-wrap .gnb-box .lnb li {}
+nav.siteMap .gnb-wrap .gnb-box .lnb li a {}

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마이샐러디 | SALADY</title>
+
+    <!-- font -->
+    <link rel="stylesheet" href="../css/font/font.css">
+    <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+        rel="stylesheet">
+    <!-- css : reset, common -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <!-- css : header, freshsalady, footer -->
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="css/menu_mysalady.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <!-- js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../js/header.js"></script>
+    <script src="js/menu_mysalady.js"></script>
+    <script src="../js/footer.js"></script>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="header-wrap">
+            <h1>
+                <a href="../index.html">
+                    <img class="on" src="../common-img/common_logo.png" alt="샐러디 로고 이미지">
+                    <img src="../common-img/common_logo-white.png" alt="샐러디 로고 이미지">
+                </a>
+
+            </h1>
+
+            <div class="nav-wrap">
+                <nav class="gnb">
+                    <ul class="gnb-wrap">
+                        <li class="gnb-box">
+                            <a href="brand_bdstory.html" class="gnb-name">BRAND</a>
+                            <ul class="lnb">
+                                <li><a href="brand_bdstory.html">브랜드스토리</a></li>
+                                <li><a href="brand_freshsalady.html">프레시샐러디</a></li>
+                            </ul>
+                        </li>
+                        <li class="gnb-box">
+                            <a href="menu_salmorning.html" class="gnb-name">MENU</a>
+                            <ul class="lnb">
+                                <li><a href="menu_salmorning.html">샐모닝</a></li>
+                                <li><a href="menu_mysalady.html">마이샐러디</a></li>
+                                <li><a href="menu_new.html">신메뉴</a></li>
+                                <li><a href="menu_best.html">베스트메뉴</a></li>
+                                <li><a href="menu_whole.html">전체메뉴</a></li>
+                            </ul>
+                        </li>
+                        <li class="gnb-box">
+                            <a href="app.html" class="gnb-name">APP</a>
+                        </li>
+                        <li class="gnb-box">
+                            <a href="news_notice.html" class="gnb-name">NEWS</a>
+                            <ul class="lnb">
+                                <li><a href="news_notice.html">공지사항</a></li>
+                                <li><a href="news_event.html">이벤트</a></li>
+                            </ul>
+                        </li>
+                        <li class="gnb-box">
+                            <a href="faq_use.html" class="gnb-name">FAQ</a>
+                            <ul class="lnb">
+                                <li><a href="faq_use.html">샐러디 이용안내</a></li>
+                                <li><a href="faq_menu.html">메뉴 관련</a></li>
+                                <li><a href="faq_payment.html">결제 및 환불</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+                <nav class="siteMap">
+                    <div class="allMenu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <ul class="gnb-wrap">
+                        <li class="gnb-box">
+                            <a href="brand_bdstory.html" class="gnb-name">BRAND</a>
+                            <ul class="lnb">
+                                <li><a href="brand_bdstory.html">브랜드스토리</a></li>
+                                <li><a href="brand_freshsalady.html">프레시샐러디</a></li>
+                            </ul>
+                        </li>
+                        <li class="gnb-box">
+                            <a href="menu_salmorning.html" class="gnb-name">MENU</a>
+                            <ul class="lnb">
+                                <li><a href="menu_salmorning.html">샐모닝</a></li>
+                                <li><a href="menu_mysalady.html">마이샐러디</a></li>
+                                <li><a href="menu_new.html">신메뉴</a></li>
+                                <li><a href="menu_best.html">베스트메뉴</a></li>
+                                <li><a href="menu_whole.html">전체메뉴</a></li>
+                            </ul>
+                        </li>
+                        <li class="gnb-box">
+                            <a href="app.html" class="gnb-name">APP</a>
+                        </li>
+                        <li class="gnb-box">
+                            <a href="news_notice.html" class="gnb-name">NEWS</a>
+                            <ul class="lnb">
+                                <li><a href="news_notice.html">공지사항</a></li>
+                                <li><a href="news_event.html">이벤트</a></li>
+                            </ul>
+                        </li>
+                        <li class="gnb-box">
+                            <a href="faq_use.html" class="gnb-name">FAQ</a>
+                            <ul class="lnb">
+                                <li><a href="faq_use.html">샐러디 이용안내</a></li>
+                                <li><a href="faq_menu.html">메뉴 관련</a></li>
+                                <li><a href="faq_payment.html">결제 및 환불</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="top-banner">
+        <div class="title-wrap inner">
+            <h2>My Salady</h2>
+            <p>채소부터 토핑, 소스까지 모두 직접 재료를 골라 만드는 나만의 커스터마이징 샐러드</p>
+        </div>
+    </section>
+
+    <section class="mysalady" id="mysalady">
+
+        <div class="c-titleWrap">
+            <p class="title-des">마이샐러디 만들기</p>
+            <h3 class="title-name">Making Mysalady</h3>
+        </div>
+
+        <div class="content-wrap inner">
+            <div class="stepBtn-wrap">
+                <a href="#step1" class="on">
+                    <span class="step-num">step 01</span>
+                    <span class="title">베이스 샐러드 선택</span>
+                </a>
+
+                <a href="#step2">
+                    <span class="step-num">step 02</span>
+                    <span class="title">토핑 선택</span>
+                </a>
+
+                <a href="#step3">
+                    <span class="step-num">step 03</span>
+                    <span class="title">소스, 사이드 선택</span>
+                </a>
+
+                <a href="#step4" class="btn">
+                    <span class="step-num">step 04</span>
+                    <span class="title">마이샐러디 완성!</span>
+                </a>
+            </div>
+
+            <div class="step-content">
+                <div id="step1" class="content-box on">
+                    <div class="img-box">
+                        <img src="img/02_menu/02-2_step1_img_01.png" alt="배경이 투명하고 채소 가득한 채소볼 이미지" class="on">
+                        <img src="img/02_menu/02-2_step1_img_02.png" alt="배경이 투명하고 채소와 포케가 함께 있는 보케볼 이미지">
+                        <img src="img/02_menu/02-2_step1_img_03.png" alt="배경이 투명하고 채소와 메밀면이 함께 있는 메밀면볼 이미지">
+                        <img src="img/02_menu/02-2_step1_img_04.png" alt="배경이 투명하고 채소와 바질파스타면이 함께 있는 메밀면볼 이미지">
+                    </div>
+
+                    <div class="txt-wrap">
+                        <div class="txt-box">
+                            <div class="title-wrap">
+                                <p class="title-step">step 01</p>
+                                <p class="title">베이스 샐러드 선택</p>
+                            </div>
+                            <p class="des">“마이샐러디의 시작은 베이스 샐러드 선택부터!”<br>
+                                기본이 되는 베이스 4종 중 원하는 스타일을 골라보세요.</p>
+                        </div>
+
+                        <div class="btn-wrap">
+                            <a href="#" class="on">채소볼</a>
+                            <a href="#">포케볼</a>
+                            <a href="#">메밀면볼</a>
+                            <a href="#">바질파스타볼</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="step2" class="content-box">
+                    <div class="img-box">
+                        <img src="img/02_menu/02-2_step2_img_01.png"
+                            alt="초록색 원 배경에 각종 단백질 토핑(삶은계란,훈제오리,두부,새우,닭가슴살) 사진들이 둥글게 배치된 이미지" class="on">
+                        <img src="img/02_menu/02-2_step2_img_02.png"
+                            alt="초록색 원 배경에 각종 채소 토핑(아보카도,피망,토마토,오이,양파) 사진들이 둥글게 배치된 이미지">
+                    </div>
+
+                    <div class="txt-wrap">
+                        <div class="txt-box">
+                            <div class="title-wrap">
+                                <p class="title-step">step 02</p>
+                                <p class="title">토핑 선택</p>
+                            </div>
+                            <p class="des">“더 맛있고, 더 영양 가득하게! 취향껏 얹어보세요.”<br>토핑은 생략 가능하며, 나만의 샐러디에 꼭 맞는 구성을 만들 수 있어요.
+                            </p>
+                        </div>
+
+                        <div class="btn-wrap">
+                            <a href="#" class="on">단백질 토핑</a>
+                            <a href="#">채소 토핑</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="step3" class="content-box">
+                    <div class="img-box">
+                        <img src="img/02_menu/02-2_step3_img_01.png" alt="초록색 원 배경에 각종 소스 토핑 사진들이 둥글게 배치된 이미지"
+                            class="on">
+                        <img src="img/02_menu/02-2_step3_img_02.png" alt="초록색 원 배경에 각종 채소 토핑 사진들이 둥글게 배치된 이미지">
+                    </div>
+
+                    <div class="txt-wrap">
+                        <div class="txt-box">
+                            <div class="title-wrap">
+                                <p class="title-step">step 03</p>
+                                <p class="title">소스, 사이드 선택</p>
+                            </div>
+                            <p class="des">“마이샐러디와 찰떡궁합인 소스로 한 끼 완성!”<br>식사와 함께 깔끔한 사이드를 더해보세요.</p>
+                        </div>
+
+                        <div class="btn-wrap">
+                            <a href="#" class="on">소스 & 무스</a>
+                            <a href="#">사이드 메뉴</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="step4" class="content-box">
+                    <div class="img-box">
+                        <img src="img/02_menu/02-2_step4_img.png" alt="초록색 원 배경에 각종  토핑들이 올라가 완성된 두 샐러드가 정면으로 배치된 이미지"
+                            class="on">
+                    </div>
+
+                    <div class="txt-wrap">
+                        <div class="txt-box">
+                            <div class="title-wrap">
+                                <p class="title-step">step 04</p>
+                                <p class="title">나만의 마이샐러디 완성!</p>
+                            </div>
+
+                            <p class="des">
+                                당신만의 방식으로 완성된 단 하나의 샐러드”<br>건강하고 맛있는 한 끼, My SALADY로 시작하세요.
+                            </p>
+
+                            <div class="notice-wrap">
+                                <p>선택한 베이스와 토핑, 음료 조합을 확인하세요</p>
+                                <p>주문 전에 한 번 더 체크!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="wrap">
+            <div class="top">
+                <a href="../index.html"><img src="../common-img/common_logo-white.png"
+                        alt="누르면 메인페이지로 이동하는 샐러디 로고 이미지"></a>
+            </div>
+
+            <div class="btm clear">
+                <div class="info-wrap">
+                    <div class="links">
+                        <p><a href="#">개인정보처리방침</a></p>
+                        <p><a href="#">서비스이용약관</a></p>
+                    </div>
+                    <div class="info">
+                        <p><span class="bold">회사명</span> ㈜샐러디</p>
+                        <p><span class="bold">사업자등록번호</span> 681-86-00031</p>
+                        <p>COPYRIGHT(C) 2022 ㈜샐러디. CO.LTD ALL RIGHT RESERVED.</p>
+                    </div>
+                </div>
+
+                <div class="sns">
+                    <a href="https://www.youtube.com/@saladykorea" class="youtube" target="_blank"><img
+                            src="../common-img/common_icon_sns-white_youtube.png"
+                            alt="샐러디 유튜브 링크로 들어갈 수 있는 유튜브 아이콘"></a>
+                    <a href="https://www.instagram.com/saladykorea/?n_media=27758&n_query=%EC%83%90%EB%9F%AC%EB%94%94&n_rank=1&n_ad_group=grp-a001-04-000000049617620&n_ad=nad-a001-04-000000376513774&n_keyword_id=nkw-a001-04-000007068628085&n_keyword=%EC%83%90%EB%9F%AC%EB%94%94&n_campaign_type=4&n_contract=tct-a001-04-000000001083789&n_ad_group_type=5&NaPm=ct%3Dmaurbo88%7Cci%3D0yi0000fR2DCOXOnNfi7%7Ctr%3Dbrnd%7Chk%3De37476c24d69d893e8118837e86e827002e67e7d%7Cnacn%3DZoJBBoAJeRYkB"
+                        class="instagram" target="_blank"><img src="../common-img/common_icon_sns-white_insta.png"
+                            alt="샐러디 인스타그램 링크로 들어갈 수 있는 인스타그램 아이콘"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
