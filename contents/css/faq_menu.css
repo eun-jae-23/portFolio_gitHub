@@ -79,13 +79,17 @@ section.menu {
 }
 
 .menu .faq-wrap .faq-box .qna .a-box {
+    margin-top: 40px;
+    padding-top: 40px;
+    border-top: 1px solid rgba(51,51,51,0.5);
     display: flex;
+}
+.menu .faq-wrap .on .qna .a-box {
     margin-top: 40px;
     padding-top: 40px;
     border-top: 1px solid rgba(51,51,51,0.5);
 }
 .menu .faq-wrap .on .qna .a-box {
-    display: flex;
 }
 .menu .faq-wrap .faq-box .qna .a-box .label {}
 .menu .faq-wrap .faq-box .qna .a-box .txt {
@@ -103,6 +107,7 @@ section.menu {
 
 .menu .faq-wrap .faq-box .btn-wrap {
     width: 40px;
+    flex-shrink: 0;
 }
 .menu .faq-wrap .faq-box .btn-wrap .btn-arrow {
     display: block;

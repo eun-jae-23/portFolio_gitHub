@@ -105,6 +105,7 @@ section.use {
 }
 .use .faq-wrap .faq-box .btn-wrap {
     width: 40px;
+    flex-shrink: 0;
 }
 .use .faq-wrap .faq-box .btn-wrap .btn-arrow {
     display: block;
