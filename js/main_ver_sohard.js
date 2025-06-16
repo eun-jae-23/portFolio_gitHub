@@ -90,7 +90,6 @@ function txtBoxBgChg() {
     })
 }
 
-
 //////// nextPage()
 function nextPage() {
     slideHeight = $('main .img-box ul li').height();

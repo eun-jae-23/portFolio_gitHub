@@ -1,3 +1,6 @@
+
+//menu_mysalady.js
+
 $(function () {
     $('header').addClass('header-scrolled');
 
@@ -75,9 +78,6 @@ function stepClickOn() {
         $(this).closest('.content-box').find('.img-box img:first').addClass('on').siblings().removeClass('on');
 
         nameClickOn();
-
-     
-
 
     });
 }
