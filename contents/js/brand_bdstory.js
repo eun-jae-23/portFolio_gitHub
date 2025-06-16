@@ -15,40 +15,58 @@ $(function () {
         marginRight: -300
     })
 
-    //3) article 좌측 자식요소 img 마진left -200, 우측 자식요소 .content 마진right -200
-    $('.salady-story article img').css({
+    //3) article 좌측 자식요소 마진left -200, 우측 자식요소 마진right -200
+    $('.salady-story article:nth-child(even) img').css({
         marginLeft: -300
     })
-    $('.salady-story article .content').css({
+    $('.salady-story article:nth-child(even) .content').css({
         marginRight: -300
     })
+    $('.salady-story article:nth-child(odd) img').css({
+        marginRight: -300
+    })
+    $('.salady-story article:nth-child(odd) .content').css({
+        marginLeft: -300
+    })
 
-    //사전 세팅 시작 끝 ////////////////////////////
+
+    //사전 세팅 끝 ////////////////////////////
 
     oneScrollEvt();
+    changeScrollEvt();
+    growScrollEvt();
+    futureScrollEvt();
 });
 
 //// 구현 메모 //////////////////////////////////////////
 //// 전역함수, 전역변수 모음 //////////////////////////////////////////
+let winTop;
+let isAnimating = false;
 
 function oneScrollEvt() {
-    let isExecuted = false;
     let htmlHeight = $('html').height();
     let finalScrollTop = htmlHeight - $('header').height();
+    let isExecuted = false;
 
     $(window).on('scroll', function () {
-        if (!isExecuted) {
-            $('html, body').animate({
-                scrollTop: finalScrollTop
-            }, 800, oneShow);
-            isExecuted = true;
-            $(window).off('scroll');
-        }
+        if (isAnimating || isExecuted) return;
+
+        isAnimating = true;
+        isExecuted = true;
+        
+        $('html, body').animate({
+            scrollTop: finalScrollTop
+        }, {
+            duration: 800,
+            complete: function() {
+                isAnimating = false;
+                oneShow();
+            }
+        });
     });
 }
 
 function oneShow() {
-
     //oneScrollEvt 끝나고 콜백함수로 처음 보여져야 할 요소들
     //.titlewrap
     //좌측 요소
@@ -83,107 +101,101 @@ function oneShow() {
 
 
 
+
+
+
+
+
+
+///////////여기서부터 문제////////////////////////////////
+
+
 function changeScrollEvt() {
-    let isExecuted = false;
-    let changeScrollTop = $('.salady-story .change').scrollTop();
-    let finalScrollTop = changeScrollTop - $('header').height();
+    let headerHeight = $('header').height();
+    let changeScrollTop = $('.salady-story .change').offset().top - headerHeight - $(window).height() * 0.35;
 
     $(window).on('scroll', function () {
-        if (!isExecuted) {
-            $('html, body').animate({
-                scrollTop: finalScrollTop
-            }, 800, changeShow);
-            isExecuted = true;
-            $(window).off('scroll');
+        winTop = $(window).scrollTop();
+        if (winTop > changeScrollTop) {
+            changeShow();
         }
     });
 }
 
 function changeShow() {
+    if (!$('.salady-story .change').hasClass('animated')) {
 
-    //changeScrollEvt 끝나고 콜백함수로 처음 보여져야 할 요소들
-    //.change
-    //좌측 요소
-    $('.salady-story .change').animate({
-        opacity: 1
-    }, 500)
-        .find('img').animate({
-            marginLeft: 0
-        }, 500).parents('.change')
-        //우측 요소
-        .find('.content').animate({
-            marginRight: 0
-        }, 500);
+        $('.salady-story .change').addClass('animated');
 
+        $('.salady-story .change').animate({
+            opacity: 1
+        }, 500)
+            //좌측요소
+            .find('img').animate({
+                marginRight: 0
+            }, 500)
+            //우측 요소
+            .parents('.change')
+            .find('.content').animate({
+                marginLeft: 0
+            }, 500);
+
+    }
 }
 
-
-
 function growScrollEvt() {
-    let isExecuted = false;
-    let growScrollTop = $('.salady-story .grow').scrollTop();
-    let finalScrollTop = growScrollTop - $('header').height();
+    let headerHeight = $('header').height();
+    let growScrollTop = $('.salady-story .grow').offset().top - headerHeight - $(window).height() * 0.35;
 
     $(window).on('scroll', function () {
-        if (!isExecuted) {
-            $('html, body').animate({
-                scrollTop: finalScrollTop
-            }, 800, growShow);
-            isExecuted = true;
-            $(window).off('scroll');
+        winTop = $(window).scrollTop();
+        if (winTop > growScrollTop) {
+            growShow();
         }
     });
 }
 
 function growShow() {
-
-    //growScrollEvt 끝나고 콜백함수로 처음 보여져야 할 요소들
-    //.grow
-    //좌측 요소
-    $('.salady-story .grow').animate({
-        opacity: 1
-    }, 500)
-        .find('img').animate({
-            marginLeft: 0
-        }, 500).parents('.grow')
-        //우측 요소
-        .find('.content').animate({
-            marginRight: 0
-        }, 500);
-
+    if (!$('.salady-story .grow').hasClass('animated')) {
+        $('.salady-story .grow').addClass('animated');
+        $('.salady-story .grow').animate({
+            opacity: 1
+        }, 500)
+            .find('img').animate({
+                marginLeft: 0
+            }, 500).parents('.grow')
+            .find('.content').animate({
+                marginRight: 0
+            }, 500);
+    }
 }
 
 function futureScrollEvt() {
-    let isExecuted = false;
-    let futureScrollTop = $('.salady-story .future').scrollTop();
-    let finalScrollTop = futureScrollTop - $('header').height();
+    let headerHeight = $('header').height();
+    let futureScrollTop = $('.salady-story .future').offset().top - headerHeight - $(window).height() * 0.35;
 
     $(window).on('scroll', function () {
-        if (!isExecuted) {
-            $('html, body').animate({
-                scrollTop: finalScrollTop
-            }, 800, futureShow);
-            isExecuted = true;
-            $(window).off('scroll');
+        winTop = $(window).scrollTop();
+        if (winTop > futureScrollTop) {
+            futureShow();
         }
     });
 }
 
 function futureShow() {
-
-    //futureScrollEvt 끝나고 콜백함수로 처음 보여져야 할 요소들
-    //.future
-    //좌측요소
-    $('.salady-story .future').animate({
-        opacity: 1
-    }, 500)
-        .find('.content').animate({
-            marginRight: 0
-        }, 500).parents('.future')
-        //우측 요소    
-        .find('img').animate({
-            marginLeft: 0
-        }, 500);
-
-
+    if (!$('.salady-story .future').hasClass('animated')) {
+        $('.salady-story .future').addClass('animated');
+        $('.salady-story .future').animate({
+            opacity: 1
+        }, 500)
+            //좌측요소
+            .find('img').animate({
+                marginRight: 0
+            }, 500)
+            //우측 요소
+            .parents('.future')
+            .find('.content').animate({
+                marginLeft: 0
+            }, 500);
+    }
 }
