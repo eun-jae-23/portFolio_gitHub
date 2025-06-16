@@ -149,6 +149,10 @@ section.event {
     top: 50%;
 }
 
+.event .slide-container .btn {
+    cursor: pointer;
+} 
+
 .event .slide-container .btn:hover {
     /* $로 hover했을 때 이미지 src 바꾸기(화살표흰색) */
     background-color: #008278;

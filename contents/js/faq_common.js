@@ -28,12 +28,11 @@ function accordionBox() {
 
 
         //3) .accordion-arrow img (this) attr로 src "../common-img/common_icon_chevron-3_btm.png"로 변경
-        $(this).find('.accordion-arrow img').attr('src',"../common-img/common_icon_chevron-3_btm.png");
-        $(this).siblings().find('.accordion-arrow img').attr('src',"../common-img/common_icon_chevron-3_top.png");
+        $(this).find('.btn-wrap img').attr('src',"../common-img/common_icon_chevron-3_btm.png");
+        $(this).siblings().find('.btn-wrap img').attr('src',"../common-img/common_icon_chevron-3_top.png");
 
     });
 
-    //이벤트 발생 : 
 
 
 }
