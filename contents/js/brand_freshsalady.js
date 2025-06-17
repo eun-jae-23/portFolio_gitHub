@@ -55,7 +55,7 @@ function oneShow (){
 
 function highlightAnimation() {
     const windowHeight = $(window).height();
-    const settingHeight = windowHeight * 0.65;
+    const settingHeight = windowHeight * 0.8;
     const animatedElements = new Set();
 
     $(window).on('scroll', function() {
