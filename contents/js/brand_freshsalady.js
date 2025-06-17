@@ -55,7 +55,7 @@ function oneShow (){
 
 function highlightAnimation() {
     const windowHeight = $(window).height();
-    const seventyPercentHeight = windowHeight * 0.7;
+    const settingHeight = windowHeight * 0.65;
     const animatedElements = new Set();
 
     $(window).on('scroll', function() {
@@ -68,7 +68,7 @@ function highlightAnimation() {
             const highlightOffset = $this.offset().top;
             const scrollTop = $(window).scrollTop();
             
-            if (scrollTop + seventyPercentHeight >= highlightOffset) {
+            if (scrollTop + settingHeight >= highlightOffset) {
                 $this.addClass('active');
                 animatedElements.add(elementId);
             }
