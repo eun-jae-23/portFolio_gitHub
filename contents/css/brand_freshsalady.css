@@ -88,14 +88,20 @@ section.how {
     margin: 0 auto;
     text-align: center;
     margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3.5%;
 }
 .top-title .txt-wrap .txt-box {
-    width: 31%;
-    float: left;
+    /* width: 31%; */
+    /* float: left; */
+    opacity: 0;
+    position: relative;
+    top: 50px;
 }
-.top-title .txt-wrap .txt-box:nth-child(2) {
+/* .top-title .txt-wrap .txt-box:nth-child(2) {
     margin: 0 3.5%;
-}
+} */
 .top-title .txt-wrap .txt-box h4 {}
 .top-title .txt-wrap .txt-box h4 .num {
     font-family: 'RiaSans-ExtraBold';
@@ -118,7 +124,7 @@ section.how {
 .cultivate만 레이아웃 다르게 주고, 위아래 여백 주기!
 */
 /* 공통 디자인 */
-.how article {
+section.how article {
     width: 1920px;
     max-width: 1920px;
     margin: 0 auto;
@@ -140,6 +146,27 @@ section.how {
     line-height: 65px;
     margin-bottom: 30px;
 }
+.how article .content .title .highlight {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+.how article .content .title .highlight::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 5%;
+    width: 0;
+    height: 20%;
+    background-color: #008278;
+    z-index: -1;
+    transition: width 0.8s ease-in-out;
+}
+
+.how article .content .title .highlight.active::before {
+    width: 100%;
+}
+
 .how article .content .des {
     font-size: 20px;
     line-height: 1.6;
@@ -191,16 +218,39 @@ section.how {
 
 /******* SECTION.SALADY-PROCESS **********************************************************/
 
-/*************************************
-가상요소로 가운데 화살표 추후 제작하기
-**************************************/
 
 section.salady-process {
     width: 100%;
     background-color: #F5FDFC;
     max-width: 2560px;
     margin: 150px auto;
+    position: relative;
 }
+/*************************************
+가상요소로 가운데 선 및 화살표 제작
+**************************************/
+
+/* 가운데 선 */
+.salady-process::after {
+    content: "";
+    width: 4px;
+    height: 90%;
+    background-color: #008278;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+}
+
+/* 화살표 */
+    .salady-process::after {
+        content: "";
+        width: 4px;
+        height: 90%;
+        background-color: #008278;
+        position: absolute;
+    }
+
 .salady-process .title-wrap {
     margin-top: 100px;
     float: left;

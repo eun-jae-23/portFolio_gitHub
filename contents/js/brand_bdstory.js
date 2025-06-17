@@ -107,12 +107,11 @@ function oneShow() {
 
 
 
-///////////여기서부터 문제////////////////////////////////
 
 
 function changeScrollEvt() {
     let headerHeight = $('header').height();
-    let changeScrollTop = $('.salady-story .change').offset().top - headerHeight - $(window).height() * 0.35;
+    let changeScrollTop = $('.salady-story .change').offset().top - headerHeight - $(window).height() * 0.55;
 
     $(window).on('scroll', function () {
         winTop = $(window).scrollTop();
@@ -143,9 +142,17 @@ function changeShow() {
     }
 }
 
+
+
+
+
+
+
+
+
 function growScrollEvt() {
     let headerHeight = $('header').height();
-    let growScrollTop = $('.salady-story .grow').offset().top - headerHeight - $(window).height() * 0.35;
+    let growScrollTop = $('.salady-story .grow').offset().top - headerHeight - $(window).height() * 0.55;
 
     $(window).on('scroll', function () {
         winTop = $(window).scrollTop();
@@ -172,7 +179,7 @@ function growShow() {
 
 function futureScrollEvt() {
     let headerHeight = $('header').height();
-    let futureScrollTop = $('.salady-story .future').offset().top - headerHeight - $(window).height() * 0.35;
+    let futureScrollTop = $('.salady-story .future').offset().top - headerHeight - $(window).height() * 0.55;
 
     $(window).on('scroll', function () {
         winTop = $(window).scrollTop();
