@@ -124,6 +124,8 @@ main .txt-box ul li .btn {
     font-size: 16px;
     font-weight: 400;
     text-transform: uppercase;
+
+    transition: all 0.3s;
 }
 
 main .txt-box ul li .btn:hover {
