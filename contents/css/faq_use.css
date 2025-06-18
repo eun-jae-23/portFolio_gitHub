@@ -20,6 +20,8 @@ section.use {
     color: #5d5d5d;
     font-size: 22px;
     line-height: 27px;
+
+    transition: all 0.3s;
 }
 .use .tabmenu a~a {
     margin-left: 30px;

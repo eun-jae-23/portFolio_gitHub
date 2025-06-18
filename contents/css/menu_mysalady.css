@@ -43,6 +43,8 @@ section.mysalady {}
     color: #5d5d5d;
     border: 1px solid #5d5d5d;
     border-radius: 80px;
+
+    transition: all 0.3s;
 }
 .mysalady .content-wrap .stepBtn-wrap a .step-num {
     display: block;
@@ -61,6 +63,12 @@ section.mysalady {}
 
 /* 활성화된 step 버튼 */
 .mysalady .content-wrap .stepBtn-wrap a.on {
+    color: #fff;
+    border: 1px solid #008278;
+    background-color: #008278;
+}
+/* hover 시 step 버튼 */
+.mysalady .content-wrap .stepBtn-wrap a:hover {
     color: #fff;
     border: 1px solid #008278;
     background-color: #008278;
@@ -148,8 +156,15 @@ section.mysalady {}
     font-size: 22px;
     line-height: 27px;
     margin: 0 20px 20px 0;
+
+    transition: all 0.3s;
 }
 .content-box .txt-wrap .btn-wrap a.on {
+    border: 1px solid #008278;
+    color: #fff;
+    background-color: #008278;
+}
+.content-box .txt-wrap .btn-wrap a:hover {
     border: 1px solid #008278;
     color: #fff;
     background-color: #008278;

@@ -47,6 +47,7 @@ main .gnb-lnb .btn-wrap .btn {
     font-weight: 800;
     font-size: 22px;
     line-height: 27px;
+    transition: all 0.3s;
 }
 main .gnb-lnb .btn-wrap .active {
     color: #008278;

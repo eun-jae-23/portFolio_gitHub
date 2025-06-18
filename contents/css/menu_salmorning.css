@@ -103,6 +103,8 @@ section.menu .content .tabmenu a {
     color: #5d5d5d;
     font-size: 22px;
     line-height: 27px;
+
+    transition: all 0.3s;
 }
 section.menu .content .tabmenu a.on, section.menu .content .tabmenu a:hover {
     background-color: #008278;

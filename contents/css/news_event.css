@@ -23,6 +23,8 @@ section.event {
     color: #5d5d5d;
     font-size: 22px;
     line-height: 27px;
+
+    transition: all 0.3s;
 }
 
 .event .tabmenu a~a {
@@ -114,6 +116,7 @@ section.event {
     position: absolute;
     left: 0;
     bottom: 40px;
+
 }
 
 .slide .right-btn:hover {
