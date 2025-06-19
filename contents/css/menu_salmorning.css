@@ -14,12 +14,14 @@ section.top-banner .title-wrap {
     color: #fff;
     padding: 119px 0;
 }
+
 section.top-banner .title-wrap h2 {
     font-family: 'RiaSans-ExtraBold';
     font-size: 52px;
     line-height: 75px;
     margin-bottom: 10px;
 }
+
 section.top-banner .title-wrap p {
     font-size: 22px;
     line-height: 27px;
@@ -30,11 +32,13 @@ section.top-banner .title-wrap p {
 section.composition {
     margin: 100px 0;
 }
+
 .composition .box-wrap {
     display: flex;
     margin: 50px auto 0;
     justify-content: space-between;
 }
+
 .composition .box-wrap .box {
     width: 453px;
     padding: 30px 50px;
@@ -42,6 +46,7 @@ section.composition {
     border-radius: 10px;
     background-color: #008278;
 }
+
 .composition .box-wrap .box img {
     display: block;
     width: 100%;
@@ -49,6 +54,7 @@ section.composition {
     box-sizing: border-box;
     margin-bottom: 20px;
 }
+
 .composition .box-wrap .box h4 {
     color: #fff;
     text-align: center;
@@ -56,24 +62,29 @@ section.composition {
     border-bottom: 1px solid #fff;
     margin-bottom: 20px;
 }
+
 .composition .box-wrap .box h4 .eng-title {
     font-family: 'RiaSans-ExtraBold';
     font-size: 20px;
     line-height: 29px;
     text-transform: uppercase;
 }
+
 .composition .box-wrap .box h4 .kor-title {
     font-size: 48px;
     line-height: 60px;
     font-weight: 800;
 }
+
 .composition .box-wrap .box .info {
     font-size: 24px;
     color: #fff;
 }
+
 .composition .box-wrap .box .info p {
     line-height: 1.8;
 }
+
 .composition .box-wrap .box .info p .title-highlight {
     font-weight: 800;
     line-height: 1.8;
@@ -86,44 +97,54 @@ section.composition {
 section.menu {
     margin: 100px 0;
 }
+
 section.menu .content {}
+
 section.menu .content .tabmenu {
-    margin: 20px 0 50px;
+    margin: 40px 0 50px;
     text-align: center;
 }
+
 section.menu .content .tabmenu a:nth-child(2) {
-    margin: 0 30px;
+    margin: 0 16px;
 }
+
 section.menu .content .tabmenu a {
     display: inline-block;
-    padding: 16px 40px;
+    padding: 12px 40px;
+    font-size: 20px;
     box-sizing: border-box;
     border: 1px solid #5d5d5d;
     border-radius: 50px;
     color: #5d5d5d;
-    font-size: 22px;
-    line-height: 27px;
+    line-height: 25px;
 
     transition: all 0.3s;
 }
-section.menu .content .tabmenu a.on, section.menu .content .tabmenu a:hover {
+
+section.menu .content .tabmenu a.on,
+section.menu .content .tabmenu a:hover {
     background-color: #008278;
     border: 1px solid #008278;
     color: #fff;
 }
 
 section.menu .content .content-wrap {}
+
 .content-wrap .menu-wrap {
     display: none;
 }
+
 .content-wrap .menu-wrap:first-child {
     display: block;
 }
+
 .content-wrap .menu-wrap ul {
     display: grid;
-    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 50px;
 }
+
 .content-wrap .menu-wrap ul li {
     width: 328px;
     padding: 10px 0 40px;
@@ -149,6 +170,7 @@ section.menu .content .content-wrap {}
     padding: 0;
     margin-bottom: 30px;
 }
+
 .content-wrap .menu-wrap ul li:hover .detail-wrap {
     display: block;
 }
@@ -161,17 +183,20 @@ section.menu .content .content-wrap {}
     width: 100%;
     box-sizing: border-box;
 }
+
 .content-wrap .menu-wrap ul li .title-wrap {
     color: #008278;
     text-align: center;
     padding: 20px 30px 0;
     box-sizing: border-box;
 }
+
 .content-wrap .menu-wrap ul li .title-wrap .eng-title {
     font-size: 16px;
     line-height: 150%;
     margin-bottom: 4px;
 }
+
 .content-wrap .menu-wrap ul li .title-wrap .kor-title {
     font-size: 24px;
     line-height: 30px;
@@ -181,23 +206,27 @@ section.menu .content .content-wrap {}
 .content-wrap .menu-wrap ul li .detail-wrap {
     display: none;
 }
+
 .content-wrap .menu-wrap ul li .detail-wrap .detail-box {
     background-color: #fff;
-    box-shadow: 0 4px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     padding: 16px 14px;
     box-sizing: border-box;
     text-align: center;
 }
+
 .content-wrap .menu-wrap ul li .detail-wrap .detail-box:nth-child(2) {
     margin: 14px 0;
 }
+
 .content-wrap .menu-wrap ul li .detail-wrap .detail-box .title {
     color: #008278;
     font-size: 20px;
     font-weight: 800;
     line-height: 25px;
 }
+
 .content-wrap .menu-wrap ul li .detail-wrap .detail-box .des {
     color: #333;
     font-size: 14px;

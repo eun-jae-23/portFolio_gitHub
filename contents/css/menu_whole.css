@@ -17,18 +17,20 @@ section.whole .content .tabmenu {
     justify-content: center;
 }
 section.whole .content .tabmenu a~a {
-    margin-left: 30px;
+    margin-left: 16px;
 }
 section.whole .content .tabmenu a {
     display: block;
-    padding: 16px 40px;
+    padding: 12px 40px;
+    font-size: 20px;
     box-sizing: border-box;
     border: 1px solid #5d5d5d;
     border-radius: 50px;
     color: #5d5d5d;
-    font-size: 22px;
     line-height: 27px;
     float: left;
+
+    transition: all 0.3s;
 }
 section.whole .content .tabmenu a.on, section.whole .content .tabmenu a:hover {
     background-color: #008278;
