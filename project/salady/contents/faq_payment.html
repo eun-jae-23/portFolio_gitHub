@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>결제 및 환불 | SALADY</title>
+
+    <!-- font -->
+    <link rel="stylesheet" href="../css/font/font.css">
+    <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+        rel="stylesheet">
+    <!-- css : reset, common -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <!-- css : header, faq_payment, footer -->
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="css/faq_payment.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <!-- js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../js/header.js"></script>
+    <script src="js/header_green.js"></script>
+    <script src="js/faq_common.js"></script>
+    <script src="../js/footer.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-wrap">
+            <h1>
+                <a href="../index.html">
+                    <img class="on" src="../common-img/common_logo.svg" alt="샐러디 로고 이미지">
+                    <img src="../common-img/common_logo-white.svg" alt="샐러디 로고 이미지">
+                </a>
+
+            </h1>
+
+            <div class="nav-wrap">
+                <nav class="gnb">
+                    <ul class="gnb-wrap">
+                        <li class="gnb-box">
+                            <a href="brand_bdstory.html" class="gnb-name">BRAND</a>
+                            <ul class="lnb">
+                                <li><a href="brand_bdstory.html">브랜드스토리</a></li>
+                                <li><a href="brand_freshsalady.html">프레시샐러디</a></li>
+                            </ul>
+                        </li>
+                        <li class="gnb-box">
+                            <a href="menu_salmorning.html" class="gnb-name">MENU</a>
+                            <ul class="lnb">
+                                <li><a href="menu_salmorning.html">샐모닝</a></li>
+                                <li><a href="menu_mysalady.html">마이샐러디</a></li>
+                                <li><a href="menu_new.html">신메뉴</a></li>
+                                <li><a href="menu_best.html">베스트메뉴</a></li>
+                                <li><a href="menu_whole.html">전체메뉴</a></li>
+                            </ul>
+                        </li>
+                        <li class="gnb-box">
+                            <a href="app.html" class="gnb-name">APP</a>
+                        </li>
+                        <li class="gnb-box">
+                            <a href="news_notice.html" class="gnb-name">NEWS</a>
+                            <ul class="lnb">
+                                <li><a href="news_notice.html">공지사항</a></li>
+                                <li><a href="news_event.html">이벤트</a></li>
+                            </ul>
+                        </li>
+                        <li class="gnb-box">
+                            <a href="faq_use.html" class="gnb-name">FAQ</a>
+                            <ul class="lnb">
+                                <li><a href="faq_use.html">샐러디 이용안내</a></li>
+                                <li><a href="faq_menu.html">메뉴 관련</a></li>
+                                <li><a href="faq_payment.html">결제 및 환불</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+                <nav class="siteMap">
+                    <div class="allMenu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <ul class="gnb-wrap">
+                        <li class="gnb-box">
+                            <a href="brand_bdstory.html" class="gnb-name">BRAND</a>
+                            <ul class="lnb">
+                                <li><a href="brand_bdstory.html">브랜드스토리</a></li>
+                                <li><a href="brand_freshsalady.html">프레시샐러디</a></li>
+                            </ul>
+                        </li>
+                        <li class="gnb-box">
+                            <a href="menu_salmorning.html" class="gnb-name">MENU</a>
+                            <ul class="lnb">
+                                <li><a href="menu_salmorning.html">샐모닝</a></li>
+                                <li><a href="menu_mysalady.html">마이샐러디</a></li>
+                                <li><a href="menu_new.html">신메뉴</a></li>
+                                <li><a href="menu_best.html">베스트메뉴</a></li>
+                                <li><a href="menu_whole.html">전체메뉴</a></li>
+                            </ul>
+                        </li>
+                        <li class="gnb-box">
+                            <a href="app.html" class="gnb-name">APP</a>
+                        </li>
+                        <li class="gnb-box">
+                            <a href="news_notice.html" class="gnb-name">NEWS</a>
+                            <ul class="lnb">
+                                <li><a href="news_notice.html">공지사항</a></li>
+                                <li><a href="news_event.html">이벤트</a></li>
+                            </ul>
+                        </li>
+                        <li class="gnb-box">
+                            <a href="faq_use.html" class="gnb-name">FAQ</a>
+                            <ul class="lnb">
+                                <li><a href="faq_use.html">샐러디 이용안내</a></li>
+                                <li><a href="faq_menu.html">메뉴 관련</a></li>
+                                <li><a href="faq_payment.html">결제 및 환불</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="payment inner">
+        <div class="c-titleWrap">
+            <p class="title-des">자주 묻는 질문</p>
+            <h3 class="title-name">FAQ</h3>
+        </div>
+
+        <div class="tabmenu">
+            <a href="faq_use.html">샐러디 이용안내</a>
+            <a href="faq_menu.html">메뉴 관련</a>
+            <a href="faq_payment.html" class="on">결제 및 환불</a>
+        </div>
+
+        <div class="faq-wrap">
+            <div class="faq-box on">
+                <div class="qna">
+                    <div class="q-box">
+                        <p class="label">Q.</p>
+                        <p class="txt">샐러디 앱에서 결제 시 법인카드 사용이 가능한가요?</p>
+                    </div>
+
+                    <div class="a-box">
+                        <p class="label">A.</p>
+                        <p class="txt">
+                            기프트카드(선불카드) 결제 시에는 기명 법인카드만 사용 가능합니다.<br>
+                            일반 결제 (신용/체크 카드) 시 기명 및 무기명 법인카드 사용이 가능하며, 카드사마다 결제 정책
+                            및 방식이 다르기에 구체적인 사항은 카드사에 문의해주시기 바랍니다.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="btn-wrap">
+                    <a href="#" class="btn-arrow"><img src="../common-img/common_icon_chevron-3_btm.png"
+                            alt="검정 색상의 chevron 모양 아이콘"></a>
+                </div>            </div>
+
+            <div class="faq-box">
+                <div class="qna">
+                    <div class="q-box">
+                        <p class="label">Q.</p>
+                        <p class="txt">자동충전에 대해서 설명해주세요.</p>
+                    </div>
+
+                    <div class="a-box">
+                        <p class="label">A.</p>
+                        <p class="txt">
+                            1. 기준 하한 자동 충전 : 잔액이 A원 이상인 경우 B원을 충전하는 자동충전 서비스입니다.<br><br>
+                            2. 월 정액 자동 충전 : 매월 A일마다 B원을 충전한다고 설정하는 방식으로, A일 오전 9시부터 순차적으로 자동 충전되며, 약간의 시간차가 발생할 수
+                            있습니다.<br>
+                            A일은 1,5,10,15,20,25일로만 지정 가능합니다. </p>
+                    </div>
+                </div>
+
+                <div class="btn-wrap">
+                    <a href="#" class="btn-arrow"><img src="../common-img/common_icon_chevron-3_btm.png"
+                            alt="검정 색상의 chevron 모양 아이콘"></a>
+                </div>            </div>
+
+            <div class="faq-box">
+                <div class="qna">
+                    <div class="q-box">
+                        <p class="label">Q.</p>
+                        <p class="txt">회원탈퇴 하고 싶은데 기프트카드 잔액이 남아있어서 안돼요.</p>
+                    </div>
+
+                    <div class="a-box">
+                        <p class="label">A.</p>
+                        <p class="txt">
+                            기프트카드 잔액이 남아있어 회원탈퇴 진행이 어려운 경우, 하단의 샐러디 채널톡을 통해 접수해주시면 확인 후 안내 도와드리겠습니다.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="btn-wrap">
+                    <a href="#" class="btn-arrow"><img src="../common-img/common_icon_chevron-3_btm.png"
+                            alt="검정 색상의 chevron 모양 아이콘"></a>
+                </div>            </div>
+
+            <div class="faq-box">
+                <div class="qna">
+                    <div class="q-box">
+                        <p class="label">Q.</p>
+                        <p class="txt">다른사람에게 기프트카드를 선물하고 싶어요!</p>
+                    </div>
+
+                    <div class="a-box">
+                        <p class="label">A.</p>
+                        <p class="txt">
+                            선물은 휴대폰 번호를 기반으로 발송되며, 샐러디 앱 회원/비회원 모두에게 발송이 가능합니다.<br>
+                            선물받은 기프트카드는 MMS로 확인할 수 있으며, MMS에 있는 PIN번호를 통해 샐러디 앱에 등록 후 사용 가능합니다. (회원 가입을 하지 않은 회원은 선물받은
+                            기프트카드 사용이 불가합니다.)<br><br>
+                            * 샐러디 앱 내 기프트카드 선물 방법: 샐러디 앱 > 카드 > 하단의 '기프트카드 선물하기' 배너 클릭<br>
+                            * 샐러디 앱 내 기프트카드 등록 방법: 샐러디 앱 > 회원 가입 > 카드 > 카드 목록 > 카드 등록<br>
+                            * 기프트 카드를 여러 장 보유하는 것은 가능하나 이미 충전한 기프트카드를 선물하는 것은 불가능합니다.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="btn-wrap">
+                    <a href="#" class="btn-arrow"><img src="../common-img/common_icon_chevron-3_btm.png"
+                            alt="검정 색상의 chevron 모양 아이콘"></a>
+                </div>            </div>
+
+            <div class="faq-box">
+                <div class="qna">
+                    <div class="q-box">
+                        <p class="label">Q.</p>
+                        <p class="txt">기프트카드의 충전금 환불 또는 결제 취소를 하고 싶어요!</p>
+                    </div>
+
+                    <div class="a-box">
+                        <p class="label">A.</p>
+                        <p class="txt">
+                            - 충전금 환불 : 잔액이 '최종 충전 금액'의 40% 이하일 경우 환불 가능합니다.<br>
+                            * 환불 신청 방법: 샐러디 앱 > 자주 묻는 질문 > 하단의 '문의하기' 클릭 후 환불 신청<br>
+                            > 환불 규정에 부합한 지 확인 후 영업일 4일 이내로 처리 완료됩니다.<br><br>
+                            - 충전금 취소 : 충전일로부터 7일이내, 현재 기프트카드의 잔액이 '최종 충전 금액' 이상일 경우 가능합니다.<br>
+                            * 취소 신청 방법: 샐러디 앱 > 카드 > 이용 내역 > '충전 취소' 버튼 클릭<br>
+                            해당 결제 건의 '충전 취소' 버튼이 활성화되어 있지 않으면 '충전 취소'가 불가능합니다.<br>
+                            (충전일로부터 7일 이내 충전금 전액 이관하신 경우(충전취소 비활성화)에도 별도 환불이 불가능합니다.)<br><br>
+                            * 기프트카드 환불 및 취소는 규정에 부합하지 않는 경우 처리가 어려우니 규정 필수 확인 부탁드리겠습니다.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="btn-wrap">
+                    <a href="#" class="btn-arrow"><img src="../common-img/common_icon_chevron-3_btm.png"
+                            alt="검정 색상의 chevron 모양 아이콘"></a>
+                </div>            </div>
+
+            <div class="faq-box">
+                <div class="qna">
+                    <div class="q-box">
+                        <p class="label">Q.</p>
+                        <p class="txt">기프트카드의 충전금은<br>
+                            매장(오프라인)에서도 충전이 가능한가요?</p>
+                    </div>
+
+                    <div class="a-box">
+                        <p class="label">A.</p>
+                        <p class="txt">기프트카드는 샐러디 앱 내에서만 충전가능하기 때문에 매장에서의 충전은 불가합니다.</p>
+                    </div>
+                </div>
+
+                <div class="btn-wrap">
+                    <a href="#" class="btn-arrow"><img src="../common-img/common_icon_chevron-3_btm.png"
+                            alt="검정 색상의 chevron 모양 아이콘"></a>
+                </div>            </div>
+
+            <div class="faq-box">
+                <div class="qna">
+                    <div class="q-box">
+                        <p class="label">Q.</p>
+                        <p class="txt">기프트카드는 어떻게 충전하나요?</p>
+                    </div>
+
+                    <div class="a-box">
+                        <p class="label">A.</p>
+                        <p class="txt">
+                            앱 내에서 카드-일반충전 혹은 자동충전 중 선택하여 충전하실 수 있습니다.<br>
+                            * 기프트카드 충전 방법 : 샐러디 앱 > 카드 > '일반충전' 또는 '자동충전' 클릭
+                        </p>
+                    </div>
+                </div>
+
+                <div class="btn-wrap">
+                    <a href="#" class="btn-arrow"><img src="../common-img/common_icon_chevron-3_btm.png"
+                            alt="검정 색상의 chevron 모양 아이콘"></a>
+                </div>            </div>
+        </div>
+
+
+    </section>
+
+    <footer>
+        <div class="wrap">
+            <div class="top">
+                <a href="../index.html"><img src="../common-img/common_logo-white.png"
+                        alt="누르면 메인페이지로 이동하는 샐러디 로고 이미지"></a>
+            </div>
+
+            <div class="btm clear">
+                <div class="info-wrap">
+                    <div class="links">
+                        <p><a href="#">개인정보처리방침</a></p>
+                        <p><a href="#">서비스이용약관</a></p>
+                    </div>
+                    <div class="info">
+                        <p><span class="bold">회사명</span> ㈜샐러디</p>
+                        <p><span class="bold">사업자등록번호</span> 681-86-00031</p>
+                        <p>COPYRIGHT(C) 2022 ㈜샐러디. CO.LTD ALL RIGHT RESERVED.</p>
+                    </div>
+                </div>
+
+                <div class="sns">
+                    <a href="https://www.youtube.com/@saladykorea" class="youtube" target="_blank"><img
+                            src="../common-img/common_icon_sns-white_youtube.png"
+                            alt="샐러디 유튜브 링크로 들어갈 수 있는 유튜브 아이콘"></a>
+                    <a href="https://www.instagram.com/saladykorea/?n_media=27758&n_query=%EC%83%90%EB%9F%AC%EB%94%94&n_rank=1&n_ad_group=grp-a001-04-000000049617620&n_ad=nad-a001-04-000000376513774&n_keyword_id=nkw-a001-04-000007068628085&n_keyword=%EC%83%90%EB%9F%AC%EB%94%94&n_campaign_type=4&n_contract=tct-a001-04-000000001083789&n_ad_group_type=5&NaPm=ct%3Dmaurbo88%7Cci%3D0yi0000fR2DCOXOnNfi7%7Ctr%3Dbrnd%7Chk%3De37476c24d69d893e8118837e86e827002e67e7d%7Cnacn%3DZoJBBoAJeRYkB"
+                        class="instagram" target="_blank"><img src="../common-img/common_icon_sns-white_insta.png"
+                            alt="샐러디 인스타그램 링크로 들어갈 수 있는 인스타그램 아이콘"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>

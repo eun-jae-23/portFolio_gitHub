@@ -1,0 +1,315 @@
+@charset "utf-8";
+
+/* brand_freshsalady.html */
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+/******* MAIN **********************************************************/
+
+main {
+    background-color: #008278;
+    width: 100%;
+    height: 100%;
+    max-width: 2560px;
+    max-height: 1440px;
+    margin: 0 auto;
+    padding-top: 100px;
+    box-sizing: border-box;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+}
+main .gnb-lnb {
+    padding: 100px 0;
+}
+
+main .gnb-lnb .gnb-name {
+    font-family: 'RiaSans-ExtraBold';
+    font-size: 60px;
+    margin-bottom: 20px;
+    line-height: 86px;
+}
+main .gnb-lnb .btn-wrap {}
+main .gnb-lnb .btn-wrap .btn {
+    color: #fff;
+    display: inline-block;
+    /* 버튼 크기 고정할 것이기 때문에 너비,높잇값 px고정 */
+    width: 200px;
+    height: 70px;
+    padding-top: 22px;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    box-sizing: border-box;
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 27px;
+    transition: all 0.3s;
+}
+main .gnb-lnb .btn-wrap .active {
+    color: #008278;
+    background-color: #fff;
+    margin-left: 20px;
+}
+main .gnb-lnb .btn-wrap .btn:not(.active):hover {
+    color: #008278;
+    background-color: #fff;
+}
+main .lnb-name {
+    width: 1200px;
+    margin: 0 auto;
+    text-shadow: 0 4px 4px rgba(0,0,0,0.2);
+    padding-top: 30px;
+    border-top: 2px solid #fff;
+    font-family: 'RiaSans-ExtraBold';
+    font-size: 100px;
+    line-height: 144px;
+}
+main .bg-img {
+    display: block;
+    width: 700px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+
+/******* SECTION.HOW **********************************************************/
+
+section.how {
+    margin: 150px auto;
+}
+.how .top-title {}
+
+.top-title  .txt-wrap {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3.5%;
+}
+.top-title .txt-wrap .txt-box {
+    /* width: 31%; */
+    /* float: left; */
+    opacity: 0;
+    position: relative;
+    top: 50px;
+}
+/* .top-title .txt-wrap .txt-box:nth-child(2) {
+    margin: 0 3.5%;
+} */
+.top-title .txt-wrap .txt-box h4 {}
+.top-title .txt-wrap .txt-box h4 .num {
+    font-family: 'RiaSans-ExtraBold';
+    font-size: 32px;
+    line-height: 46px;
+}
+.top-title .txt-wrap .txt-box h4 .title {
+    font-weight: 800;
+    font-size: 56px;
+    line-height: 70px;
+    margin-bottom: 20px;
+}
+.top-title .txt-wrap .txt-box .des {
+    font-size: 20px;
+    line-height: 1.4;
+    color: #5d5d5d;
+}
+
+/* section.how article은 같은 구조, article.cultivate만 레이아웃 다름
+.cultivate만 레이아웃 다르게 주고, 위아래 여백 주기!
+*/
+/* 공통 디자인 */
+section.how article {
+    width: 1920px;
+    max-width: 1920px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: relative; /* .content img 의 기준 */
+    /* background-color: plum; */
+}
+.how article .content {
+    width: 764px;
+    float: left;
+}
+.how article .content img {
+    width: 328px;
+    display: block;
+}
+.how article .content .title {
+    font-weight: 800;
+    font-size: 52px;
+    line-height: 65px;
+    margin-bottom: 30px;
+}
+.how article .content .title .highlight {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+.how article .content .title .highlight::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 5%;
+    width: 0;
+    height: 20%;
+    background-color: #008278;
+    z-index: -1;
+    transition: width 0.8s ease-in-out;
+}
+
+.how article .content .title .highlight.active::before {
+    width: 100%;
+}
+
+.how article .content .des {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.how article .img-box {
+    float: left;
+    width: 810px;
+}
+.how article .img-box img {
+    width: 100%;
+    display: block;
+    /* outline: 3px solid red; */
+}
+
+/* 개별 디자인 */
+/* 2n : .process, .certify */
+.how article:nth-child(2n) {
+    margin: 200px auto;
+    padding-left: 230px;
+}
+.how article:nth-child(2n) .content {
+    margin-right: 116px;
+    margin-top: 710px;
+}
+.how article:nth-child(2n) .content img {
+    position: absolute;
+    left: 152px;
+    top: 407px;
+}
+
+/* 2n-1 : .cultivate */
+.how article:nth-child(2n-1) {
+    padding-right: 230px;
+}
+.how article:nth-child(2n-1) .img-box {
+    margin-right: 116px;
+}
+.how article:nth-child(2n-1) .content {
+    margin-top: 668px;
+}
+.how article:nth-child(2n-1) .content img {
+    position: absolute;
+    left: 828px;
+    top: 370px;
+}
+
+
+
+/******* SECTION.SALADY-PROCESS **********************************************************/
+
+
+section.salady-process {
+    width: 100%;
+    background-color: #F5FDFC;
+    max-width: 2560px;
+    margin: 150px auto;
+    position: relative;
+}
+/*************************************
+가상요소로 가운데 선 및 화살표 제작
+**************************************/
+
+/* 가운데 선 */
+.salady-process::after {
+    content: "";
+    width: 4px;
+    height: 90%;
+    background-color: #008278;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+}
+
+/* 화살표 */
+    .salady-process::after {
+        content: "";
+        width: 4px;
+        height: 90%;
+        background-color: #008278;
+        position: absolute;
+    }
+
+.salady-process .title-wrap {
+    margin-top: 100px;
+    float: left;
+}
+.salady-process .title-wrap .title {
+    font-family: 'RiaSans-ExtraBold';
+    font-size: 100px;
+    line-height: 144px;
+    color: #008278;
+    margin-bottom: 30px;
+}
+.salady-process .title-wrap .des {
+    font-size: 24px;
+    line-height: 1.4;
+    color: #5d5d5d;
+}
+
+.salady-process .process-wrap {
+    margin-left: 298px;
+    padding-top: 100px;
+    float: left;
+}
+.salady-process .process-wrap .process-box {
+    margin-bottom: 120px;
+}
+.salady-process .process-wrap .process-box:last-child {
+    margin-bottom: 250px;
+}
+.process-wrap .process-box .process-title {
+    width: 470px;
+    margin-bottom: 10px;
+}
+.process-wrap .process-box .process-title .title {
+    color: #008278;
+    float: left;
+}
+.process-wrap .process-box .process-title .title .step {
+    font-family: 'RiaSans-ExtraBold';
+    font-size: 30px;
+    line-height: 43px;
+    text-transform: uppercase;
+}
+.process-wrap .process-box .process-title .title .title-name {
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 62px;
+}
+.process-wrap .process-box .process-title img {
+    display: block;
+    width: 100px;
+    padding: 12px;
+    box-sizing: border-box;
+    float: right;
+}
+
+.process-wrap .process-box .process-des {
+    width: 100%;
+    color: #5d5d5d;
+    font-size: 24px;
+    line-height: 1.2;
+}

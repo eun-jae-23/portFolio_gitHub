@@ -1,0 +1,62 @@
+/* 폰트 사용 방법 */
+
+/* 
+
+1. 리아체 (normal,bold,bold)
+- 폰트 변환하여 사용 (@font-face)
+    font-family: 'RiaSans-Regular';
+    font-weight: normal;
+
+    font-family: 'RiaSans-Bold';
+    font-weight: bold;
+
+    font-family: 'RiaSans-ExtraBold';
+    font-weight: bold;
+
+
+2. 수트 (weight : 100-900)
+- 웹폰트 사용 (link)
+-> ExtraLight / Regular / ExtraBold / Heavy
+->    200        400        800        900
+    font-family: 'SUIT Variable', sans-serif;
+    font-weight: 200|400|800|900;
+
+    
+*/
+
+/* *********************************************************************** */
+
+/* 리아체 폰트변환 */
+
+@font-face {
+    font-family: 'RiaSans-Bold';
+    src: url('RiaSans-BoldA1.eot');
+    src: url('RiaSans-BoldA1.eot?#iefix') format('embedded-opentype'),
+        url('RiaSans-BoldA1.woff2') format('woff2'),
+        url('RiaSans-BoldA1.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'RiaSans-ExtraBold';
+    src: url('RiaSans-ExtraBoldA1.eot');
+    src: url('RiaSans-ExtraBoldA1.eot?#iefix') format('embedded-opentype'),
+        url('RiaSans-ExtraBoldA1.woff2') format('woff2'),
+        url('RiaSans-ExtraBoldA1.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'RiaSans-Regular';
+    src: url('RiaSans-RegularA1.eot');
+    src: url('RiaSans-RegularA1.eot?#iefix') format('embedded-opentype'),
+        url('RiaSans-RegularA1.woff2') format('woff2'),
+        url('RiaSans-RegularA1.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
