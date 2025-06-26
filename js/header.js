@@ -8,6 +8,7 @@ $(function () {
       };
 
     DropDownMenu();
+    siteMap();
 });
 
 
@@ -55,3 +56,55 @@ function DropDownMenu () {
     });
 }
 
+
+function siteMap () {
+    // ... 기존 코드 ...
+    // 사이트맵(햄버거) 메뉴 동작 추가
+    // 최초에 사이트맵 gnb-wrap 숨김
+    $('nav.siteMap .gnb-wrap').hide();
+
+    // 햄버거 버튼 클릭 이벤트
+    $('.allMenu').on('click', function () {
+        var $siteMap = $('nav.siteMap .gnb-wrap');
+        var $headerLogo = $('header h1 a img');
+        var $allMenu = $(this);
+
+        if (!$siteMap.hasClass('active')) {
+            // 사이트맵 열기
+            $siteMap.stop(true, true)
+                .css({display: 'grid', height: 0, opacity: 0})
+                .animate({height: '100%', opacity: 1}, 300, function(){
+                    $siteMap.addClass('active');
+                });
+            $allMenu.addClass('active');
+            // 로고 흰색으로 고정
+            $headerLogo.removeClass('on');
+            $headerLogo.eq(1).addClass('on');
+            // 햄버거(X) 버튼 span 흰색으로 고정
+            $('.allMenu span').css('background-color', '#fff');
+        } else {
+            // 사이트맵 닫기
+            $siteMap.stop(true, true)
+                .animate({height: 0, opacity: 0}, 300, function () {
+                    $siteMap.removeClass('active');
+                    $siteMap.css({display: 'none'});
+                });
+            $allMenu.removeClass('active');
+            // 로고/버튼 색상 복원: 스크롤 이벤트 트리거
+            $(window).trigger('scroll');
+        }
+    });
+
+    // 스크롤/리사이즈 시에도 siteMap이 열려있으면 로고/버튼 색상 고정
+    $(window).on('scroll resize', function () {
+        var $siteMap = $('nav.siteMap .gnb-wrap');
+        var $headerLogo = $('header h1 a img');
+        if ($siteMap.hasClass('active')) {
+            // 로고 흰색으로 고정
+            $headerLogo.removeClass('on');
+            $headerLogo.eq(1).addClass('on');
+            // 햄버거(X) 버튼 span 흰색으로 고정
+            $('.allMenu span').css('background-color', '#fff');
+        }
+    });
+}

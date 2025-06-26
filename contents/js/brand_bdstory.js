@@ -40,38 +40,19 @@ $(function () {
 
 //// 구현 메모 //////////////////////////////////////////
 //// 전역함수, 전역변수 모음 //////////////////////////////////////////
-let winTop;
 let isAnimating = false;
-let isExecuted = false;
-let htmlHeight = $('html').height();
-let finalScrollTop = htmlHeight - $('header').height();
 
 function oneScrollEvt() {
+    let htmlHeight = $('html').height();
+    let finalScrollTop = htmlHeight - $('header').height();
+    let isExecuted = false;
 
-    $(document).on('mousewheel DOMMouseScroll', function () {
-
-        //1. 실행중인지, animate중인지 확인 > true면 함수 종료  
-        //isAnimating : true면 animate 완료된 상태, false면 animate 한번 실행되기 전인 상태
-        //isExecuted : true면 휠이벤트가 한번은 실행된 상태, false면 아직 실행되지 않은 상태
+    $(window).on('scroll', function () {
         if (isAnimating || isExecuted) return;
 
         isAnimating = true;
         isExecuted = true;
-
-
-        //2. 브라우저 구분하기 - 발생한 이벤트(객체) 정보 확인하기
-        var evt = window.event;
-
-        //3. wheelDelta값 구하기 - 브라우저별로 구분해서 값 반환받기!
-        var delta = evt.wheelDelta ? evt.wheelDelta : evt.detail;
-
-        //4. 파이어폭스 브라우저를 위한 처리!
-        if (/Firefox/i.test(navigator.userAgent)) {
-            delta = -evt.detail;
-            console.log('파이어폭스 detail: '+ delta);
-        }
         
-        //5. 마우스휠 이벤트로 페이지 이동하기 
         $('html, body').animate({
             scrollTop: finalScrollTop
         }, {
@@ -81,10 +62,7 @@ function oneScrollEvt() {
                 oneShow();
             }
         });
-
     });
-
-
 }
 
 function oneShow() {

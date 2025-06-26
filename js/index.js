@@ -51,16 +51,22 @@ function headDgnChg() {
         const currentScroll = $(window).scrollTop();
 
         if (currentScroll > winH && !currentState) {
+            // 스크롤 내렸을 때
             $('header h1 img').removeClass('on').eq(0).addClass('on');
             $('header')
                 .removeClass(headerClasses.default)
                 .addClass(headerClasses.scrolled);
+            // 햄버거 버튼 색상 초록색
+            $('.allMenu span').css('background-color', '#008278');
             currentState = true;
         } else if (currentScroll <= winH && currentState) {
+            // 맨 위일 때
             $('header h1 img').removeClass('on').eq(1).addClass('on');
             $('header')
                 .removeClass(headerClasses.scrolled)
                 .addClass(headerClasses.default);
+            // 햄버거 버튼 색상 흰색
+            $('.allMenu span').css('background-color', '#fff');
             currentState = false;
         }
     }

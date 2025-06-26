@@ -21,7 +21,7 @@ header.header-default .nav-wrap nav.gnb .gnb-wrap .gnb-box .gnb-name {
 
 header.header-scrolled {
     background-color: #fff;
-    box-shadow: 0 4px 4px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.05);
 }
 
 header.header-scrolled .nav-wrap nav.gnb .gnb-wrap .gnb-box .gnb-name {
@@ -39,14 +39,18 @@ header.header-scrolled .nav-wrap nav.gnb .gnb-wrap .gnb-box .gnb-name {
 
 header h1 {
     width: 190px;
+    z-index: 9999;
 }
+
 header h1 a {
     display: block;
 }
+
 header h1 a img {
     width: 100%;
     display: none;
 }
+
 header h1 a img.on {
     display: block;
 }
@@ -60,14 +64,18 @@ header .nav-wrap nav.gnb {
     display: flex;
     justify-content: space-between;
 }
+
 header .nav-wrap nav.gnb .gnb-wrap {
     display: flex;
     margin-right: 25px;
 }
+
 header .nav-wrap nav.gnb .gnb-wrap .gnb-box {
     padding: 0 25px;
-    position: relative; /* .lnb의 기준 */
+    position: relative;
+    /* .lnb의 기준 */
 }
+
 header .nav-wrap nav.gnb .gnb-wrap .gnb-box .gnb-name {
     font-family: 'SUIT Variable', sans-serif;
     font-weight: 800;
@@ -76,6 +84,7 @@ header .nav-wrap nav.gnb .gnb-wrap .gnb-box .gnb-name {
     text-transform: uppercase;
     line-height: 100px;
 }
+
 header .nav-wrap nav.gnb .gnb-wrap .gnb-box .gnb-name:hover {
     text-decoration: underline;
 }
@@ -92,10 +101,13 @@ header .nav-wrap nav.gnb .gnb-wrap .gnb-box .lnb {
     background-color: #fff;
     border-radius: 5px;
 }
+
 header .nav-wrap nav.gnb .gnb-wrap .gnb-box .lnb li {}
+
 header .nav-wrap nav.gnb .gnb-wrap .gnb-box .lnb li~li {
     margin-top: 20px;
 }
+
 header .nav-wrap nav.gnb .gnb-wrap .gnb-box .lnb li a {
     font-size: 18px;
     line-height: 22px;
@@ -106,24 +118,88 @@ header .nav-wrap nav.gnb .gnb-wrap .gnb-box .lnb li a {
 
 header .nav-wrap nav.siteMap .allMenu {
     cursor: pointer;
+    position: relative;
+    z-index: 10000;
 }
+
 header .nav-wrap nav.siteMap .allMenu span {
     display: block;
     width: 30px;
     height: 2px;
     background-color: #008278;
     border-radius: 1px;
+    transition: all 0.3s ease;
 }
+
 header .nav-wrap nav.siteMap .allMenu span:nth-child(2) {
     margin: 9px 0;
 }
 
-/* 사이트맵 디자인 임시 숨김처리 - 신세계푸드 참고해서 피그마로 만든 후 디자인 입히기 (html 마크업은 완성함) */
+/* 햄버거 버튼 활성화 상태 */
+header .nav-wrap nav.siteMap .allMenu.active span {
+    background-color: #fff;
+}
+
+header .nav-wrap nav.siteMap .allMenu.active span:nth-child(1) {
+    transform: rotate(45deg) translate(8px, 8px);
+}
+
+header .nav-wrap nav.siteMap .allMenu.active span:nth-child(2) {
+    opacity: 0;
+}
+
+header .nav-wrap nav.siteMap .allMenu.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(8px, -8px);
+}
+
+/* 사이트맵 스타일 */
 header .nav-wrap nav.siteMap .gnb-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    padding: 150px 230px 0;
+    box-sizing: border-box;
+
+    height: 0;
     display: none;
 }
-header .nav-wrap nav.siteMap .gnb-wrap .gnb-box {}
-nav.siteMap .gnb-wrap .gnb-box .gnb-name {}
-nav.siteMap .gnb-wrap .gnb-box .lnb {}
-nav.siteMap .gnb-wrap .gnb-box .lnb li {}
-nav.siteMap .gnb-wrap .gnb-box .lnb li a {}
+
+header .nav-wrap nav.siteMap .gnb-wrap.active {
+    display: grid;
+}
+
+header .nav-wrap nav.siteMap .gnb-wrap .gnb-box {
+    text-align: center;
+}
+
+nav.siteMap .gnb-wrap .gnb-box .gnb-name {
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 31px;
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+nav.siteMap .gnb-wrap .gnb-box .lnb {
+margin-top: 50px;
+}
+
+nav.siteMap .gnb-wrap .gnb-box .lnb li {
+    margin-bottom: 20px;
+
+}
+
+nav.siteMap .gnb-wrap .gnb-box .lnb li a {
+    font-size: 18px;
+    line-height: 22px;
+    color: #fff;
+}
+
+nav.siteMap .gnb-wrap .gnb-box .lnb li a:hover {
+    text-decoration: underline;
+}

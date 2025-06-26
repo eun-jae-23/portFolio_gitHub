@@ -227,30 +227,7 @@ section.salady-process {
     margin: 150px auto;
     position: relative;
 }
-/*************************************
-가상요소로 가운데 선 및 화살표 제작
-**************************************/
 
-/* 가운데 선 */
-.salady-process::after {
-    content: "";
-    width: 4px;
-    height: 90%;
-    background-color: #008278;
-    position: absolute;
-    left: 50%;
-    top: 0;
-    transform: translateX(-50%);
-}
-
-/* 화살표 */
-    .salady-process::after {
-        content: "";
-        width: 4px;
-        height: 90%;
-        background-color: #008278;
-        position: absolute;
-    }
 
 .salady-process .title-wrap {
     margin-top: 100px;
@@ -293,7 +270,9 @@ section.salady-process {
     font-size: 30px;
     line-height: 43px;
     text-transform: uppercase;
+    position: relative; /* .step::before의 기준 */
 }
+
 .process-wrap .process-box .process-title .title .title-name {
     font-weight: 900;
     font-size: 50px;

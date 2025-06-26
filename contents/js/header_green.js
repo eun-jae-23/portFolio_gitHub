@@ -16,4 +16,8 @@ function headerGreen () {
     $('header nav.gnb .gnb-wrap .gnb-box .gnb-name').css({
         color: '#fff'
     });
+    // 햄버거 버튼 색상 흰색으로 변경
+    $('header .nav-wrap nav.siteMap .allMenu span').css({
+        backgroundColor: '#fff'
+    });
 }
