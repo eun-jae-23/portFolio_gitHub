@@ -1,10 +1,12 @@
 <!DOCTYPE html>
+
 <html lang="ko">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio</title>
+    <title>홈 | SALADY</title>
 
     <!-- font -->
     <link rel="stylesheet" href="css/font/font.css">
@@ -13,24 +15,527 @@
         rel="stylesheet">
 
 
-
-    <!-- css -->
+    <!-- css : reset, common -->
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <!-- css : header, index, footer -->
+    <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/footer.css">
+
     <!-- js -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/header.js"></script>
     <script src="js/index.js"></script>
+    <!-- <script src="js/main.js"></script> -->
+    <!-- <script src="js/main_ver_hard.js"></script> -->
+    <!-- <script src="js/main_ver_sohard.js"></script> -->
+    <script src="js/main_ver_250623.js"></script>
+    <script src="js/footer.js"></script>
 
-    <style>
-        h1 {
 
-        }
-    </style>
+
 
 </head>
 
 <body>
-    <h1>Hello World</h1>
+
+    <header>
+        <div class="header-wrap">
+            <h1>
+                <a href="index.html">
+                    <img class="on" src="common-img/common_logo.svg" alt="샐러디 로고 이미지">
+                    <img src="common-img/common_logo-white.svg" alt="샐러디 로고 이미지">
+                </a>
+
+            </h1>
+
+            <div class="nav-wrap">
+                <nav class="gnb">
+                    <ul class="gnb-wrap">
+                        <li class="gnb-box">
+                            <a href="contents/brand_bdstory.html" class="gnb-name">BRAND</a>
+                            <ul class="lnb">
+                                <li><a href="contents/brand_bdstory.html">브랜드스토리</a></li>
+                                <li><a href="contents/brand_freshsalady.html">프레시샐러디</a></li>
+                            </ul>
+                        </li>
+                        <li class="gnb-box">
+                            <a href="contents/menu_salmorning.html" class="gnb-name">MENU</a>
+                            <ul class="lnb">
+                                <li><a href="contents/menu_salmorning.html">샐모닝</a></li>
+                                <li><a href="contents/menu_mysalady.html">마이샐러디</a></li>
+                                <li><a href="contents/menu_new.html">신메뉴</a></li>
+                                <li><a href="contents/menu_best.html">베스트메뉴</a></li>
+                                <li><a href="contents/menu_whole.html">전체메뉴</a></li>
+                            </ul>
+                        </li>
+                        <li class="gnb-box">
+                            <a href="contents/app.html" class="gnb-name">APP</a>
+                        </li>
+                        <li class="gnb-box">
+                            <a href="contents/news_notice.html" class="gnb-name">NEWS</a>
+                            <ul class="lnb">
+                                <li><a href="contents/news_notice.html">공지사항</a></li>
+                                <li><a href="contents/news_event.html">이벤트</a></li>
+                            </ul>
+                        </li>
+                        <li class="gnb-box">
+                            <a href="contents/faq_use.html" class="gnb-name">FAQ</a>
+                            <ul class="lnb">
+                                <li><a href="contents/faq_use.html">샐러디 이용안내</a></li>
+                                <li><a href="contents/faq_menu.html">메뉴 관련</a></li>
+                                <li><a href="contents/faq_payment.html">결제 및 환불</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+                <nav class="siteMap">
+                    <div class="allMenu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <ul class="gnb-wrap">
+                        <li class="gnb-box">
+                            <a href="contents/brand_bdstory.html" class="gnb-name">BRAND</a>
+                            <ul class="lnb">
+                                <li><a href="contents/brand_bdstory.html">브랜드스토리</a></li>
+                                <li><a href="contents/brand_freshsalady.html">프레시샐러디</a></li>
+                            </ul>
+                        </li>
+                        <li class="gnb-box">
+                            <a href="contents/menu_salmorning.html" class="gnb-name">MENU</a>
+                            <ul class="lnb">
+                                <li><a href="contents/menu_salmorning.html">샐모닝</a></li>
+                                <li><a href="contents/menu_mysalady.html">마이샐러디</a></li>
+                                <li><a href="contents/menu_new.html">신메뉴</a></li>
+                                <li><a href="contents/menu_best.html">베스트메뉴</a></li>
+                                <li><a href="contents/menu_whole.html">전체메뉴</a></li>
+                            </ul>
+                        </li>
+                        <li class="gnb-box">
+                            <a href="contents/app.html" class="gnb-name">APP</a>
+                        </li>
+                        <li class="gnb-box">
+                            <a href="contents/news_notice.html" class="gnb-name">NEWS</a>
+                            <ul class="lnb">
+                                <li><a href="contents/news_notice.html">공지사항</a></li>
+                                <li><a href="contents/news_event.html">이벤트</a></li>
+                            </ul>
+                        </li>
+                        <li class="gnb-box">
+                            <a href="contents/faq_use.html" class="gnb-name">FAQ</a>
+                            <ul class="lnb">
+                                <li><a href="contents/faq_use.html">샐러디 이용안내</a></li>
+                                <li><a href="contents/faq_menu.html">메뉴 관련</a></li>
+                                <li><a href="contents/faq_payment.html">결제 및 환불</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+    <main class="clear">
+        <div class="img-box">
+            <ul>
+                <li><img src="img/index-slide_bg_01.jpg" alt="샐러디 메인 슬라이드 첫 번째 이미지 : 청색 배경에 다양한 샐러드가 배치된 사진"></li>
+                <li><img src="img/index-slide_bg_02.jpg" alt="샐러디 메인 슬라이드 두 번째 이미지 : 노란색 배경에 다양한 샐러드가 배치된 사진"></li>
+                <li><img src="img/index-slide_bg_03.jpg"
+                        alt="샐러디 메인 슬라이드 세세 번째 이미지 : 연두색 배경에 프로틴 박스를 홍보하기 위해 프로틴 박스 메뉴들이  배치된 사진"></li>
+            </ul>
+        </div>
+
+        <div class="txt-box">
+            <ul>
+                <li>
+                    <div class="title-wrap">
+                        <p class="title-eng">Salmorning!</p>
+                        <h2 class="title-kor">
+                            아침을 깨워줄<br>
+                            <span class="highlight">샐모닝</span> 메뉴
+                        </h2>
+                    </div>
+
+                    <p class="des">
+                        아침에도 건강한 식단을 하려는 여러분을 위해<br>
+                        샐러디만의 특별한 아침 메뉴를 선사합니다.
+                    </p>
+
+                    <a href="contents/menu_salmorning.html" class="btn">view more<img
+                            src="common-img/common_icon_arrow-white_right.png" alt="우측 흰색 화살표 아이콘"></a>
+                </li>
+
+                <li>
+                    <div class="title-wrap">
+                        <p class="title-eng">mysalady.</p>
+                        <h2 class="title-kor">
+                            취향대로 먹는<br>
+                            <span class="highlight">마이샐러디</span>
+                        </h2>
+                    </div>
+
+                    <p class="des">
+                        취향 따라 골라 담는 나만의 커스터마이징 샐러드!<br>
+                        매일 다른 조합으로 새로운 마이샐러디를 만나보세요.
+                    </p>
+
+                    <a href="contents/menu_mysalady.html" class="btn">view more<img
+                            src="common-img/common_icon_arrow-white_right.png" alt="우측 흰색 화살표 아이콘"></a>
+                </li>
+
+                <li>
+                    <div class="title-wrap">
+                        <p class="title-eng">proteinbox.</p>
+                        <h2 class="title-kor">
+                            균형잡힌<br>
+                            <span class="highlight">프로틴 박스</span>
+                        </h2>
+                    </div>
+
+                    <p class="des">
+                        바쁜 일상 속 건강한 식사를 위한 최고의 선택!<br>
+                        샐러디의 프로틴박스로 영양과 맛을 모두 챙기세요.
+                    </p>
+
+                    <a href="contents/menu_whole.html" class="btn">view more<img
+                            src="common-img/common_icon_arrow-white_right.png" alt="우측 흰색 화살표 아이콘"></a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="mid-img">
+            <ul>
+                <li>
+                    <img src="img/index-slide_img_01.png" alt="샐모닝 샌드 이미지">
+                </li>
+                <li>
+                    <img src="img/index-slide_img_02.png" alt="각종 단백질, 야채, 소스 토핑이 올라가 완성된 샐러드 이미지">
+                </li>
+                <li>
+                    <img src="img/index-slide_img_03.png" alt="단백질 토핑이 가득 들어있고 야채, 현미밥이 들어있는 프로틴박스 이미지">
+                </li>
+            </ul>
+        </div>
+
+        <div class="pager">
+
+            <a href="#" class="btn" id="prev"><img src="common-img/common_icon_chevron-white_left.png"
+                    alt="이전으로 넘어가는 좌측 chevron 버튼"></a>
+
+            <div class="pager-status">
+                <span class="num-now">01</span>
+                <span class="status-bar"><span class="progress-bar"></span></span>
+                <span class="num-last">03</span>
+            </div>
+
+
+            <a href="#" class="btn" id="next"><img src="common-img/common_icon_chevron-white_right.png"
+                    alt="다음으로 넘어가는 우측 chevron 버튼"></a>
+
+        </div>
+    </main>
+
+
+    <section class="menu">
+        <article class="new-salady">
+
+            <div class="title-wrap">
+                <h2 class="title">NEW SALADY</h2>
+                <p class="des">샐러디에서 직접 개발하여 새로 출시한 신메뉴를 만나보세요!</p>
+                <a class="link" href="contents/menu_new.html">view more<img
+                        src="common-img/common_icon_arrow-5d_right.png" alt="우측 회색 화살표 아이콘"></a>
+            </div>
+
+            <div class="slider-wrap">
+                <div class="slider">
+                    <ul class="clear">
+                        <li>
+                            <div class="box">
+                                <a href="#" class="img-box"><img
+                                        src="contents/img/02_menu/wrap_mexican-beef-rib-poke-wrap.png"
+                                        alt="멕시칸갈빗살 포케랩 이미지"></a>
+                                <div class="title-box">
+                                    <p class="title eng">Mexican Beef Rib Poke Wrap</p>
+                                    <p class="title kor"><a href="#">멕시칸갈빗살 포케랩</a></p>
+                                </div>
+                            </div>
+
+                            <div class="box">
+                                <a href="#" class="img-box"><img
+                                        src="contents/img/02_menu/pbox_double-porkbelly-protein-box.png"
+                                        alt="더블 삼겹 박스 이미지"></a>
+                                <div class="title-box">
+                                    <p class="title eng">Double Pork Belly Protein Box</p>
+                                    <p class="title kor"><a href="#">더블 삼겹 박스</a></p>
+                                </div>
+                            </div>
+
+                            <div class="box">
+                                <a href="#" class="img-box"><img
+                                        src="contents/img/02_menu/bowl_roast-pork-belly-poke-bowl.png"
+                                        alt="로스트삼겹 포케볼 이미지"></a>
+                                <div class="title-box">
+                                    <p class="title eng">Roast Pork Belly Poke Bowl</p>
+                                    <p class="title kor"><a href="#">로스트삼겹 포케볼</a></p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="box">
+                                <a href="#" class="img-box"><img
+                                        src="contents/img/02_menu/bowl_gravlax-salmon-poke-bowl.png"
+                                        alt="그라브락스 연어 포케볼 이미지"></a>
+                                <div class="title-box">
+                                    <p class="title eng">Gravlax Salmon Poke Bowl</p>
+                                    <p class="title kor"><a href="#">그라브락스 연어 포케볼</a></p>
+                                </div>
+                            </div>
+
+                            <div class="box">
+                                <a href="#" class="img-box"><img
+                                        src="contents/img/02_menu/bowl_beef-rib-buckwheat-noodles-noodle-bowl.png"
+                                        alt="갈빗살메밀면 누들볼 이미지"></a>
+                                <div class="title-box">
+                                    <p class="title eng">Beef Rib Buckwheat Noodles Noodle Bowl</p>
+                                    <p class="title kor"><a href="#">갈빗살메밀면 누들볼</a></p>
+                                </div>
+                            </div>
+
+                            <div class="box">
+                                <a href="#" class="img-box"><img
+                                        src="contents/img/02_menu/pbox_double-chicken-breast-pasta-protein-box.png"
+                                        alt="더블 치킨 파스타 박스 이미지"></a>
+                                <div class="title-box">
+                                    <p class="title eng">Double Chicken Breast Pasta Protein Box</p>
+                                    <p class="title kor"><a href="#">더블 치킨 파스타 박스</a></p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="box">
+                                <a href="#" class="img-box"><img
+                                        src="contents/img/02_menu/pbox_double-beef-protein-box.png"
+                                        alt="더블 비프 박스 이미지"></a>
+                                <div class="title-box">
+                                    <p class="title eng">Double Beef Protein Box</p>
+                                    <p class="title kor"><a href="#">더블 비프 박스</a></p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="btn prev"><img src="common-img/common_icon_arrow-green_left.png"
+                        alt="다른 메뉴를 더 볼 수 있는 이전 버튼"></div>
+                <div class="btn next"><img src="common-img/common_icon_arrow-green_right.png"
+                        alt="다른 메뉴를 더 볼 수 있는 다음 버튼"></div>
+            </div>
+
+        </article>
+
+
+        <article class="best-salady">
+
+            <div class="title-wrap">
+                <h2 class="title">BEST SALADY</h2>
+                <p class="des">샐러디에서 인기 있는 시그니처 베스트 메뉴를 만나보세요!</p>
+                <a class="link" href="contents/menu_best.html">view more<img
+                        src="common-img/common_icon_arrow-5d_right.png" alt="우측 회색 화살표 아이콘"></a>
+            </div>
+
+            <div class="slider-wrap">
+                <div class="slider">
+                    <ul class="clear">
+                        <li>
+                            <div class="box">
+                                <a href="#" class="img-box"><img
+                                        src="contents/img/02_menu/pbox_double-porkbelly-protein-box.png"
+                                        alt="더블 삼겹 박스 이미지"></a>
+                                <div class="title-box">
+                                    <p class="title eng">Double Pork Belly Protein Box</p>
+                                    <p class="title kor"><a href="#">더블 삼겹 박스</a></p>
+                                </div>
+                            </div>
+
+                            <div class="box">
+                                <a href="#" class="img-box"><img
+                                        src="contents/img/02_menu/bowl_gravlax-salmon-poke-bowl.png"
+                                        alt="그라브락스 연어 포케볼 이미지"></a>
+                                <div class="title-box">
+                                    <p class="title eng">Gravlax Salmon Poke Bowl</p>
+                                    <p class="title kor"><a href="#">그라브락스 연어 포케볼</a></p>
+                                </div>
+                            </div>
+
+                            <div class="box">
+                                <a href="#" class="img-box"><img src="contents/img/02_menu/wrap_mexican-wrap.png"
+                                        alt="멕시칸 랩 이미지"></a>
+                                <div class="title-box">
+                                    <p class="title eng">Mexican Wrap</p>
+                                    <p class="title kor"><a href="#">멕시칸 랩</a></p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="box">
+                                <a href="#" class="img-box"><img
+                                        src="contents/img/02_menu/bowl_chilli-bacon-poke-bowl.png"
+                                        alt="칠리베이컨 포케볼 이미지"></a>
+                                <div class="title-box">
+                                    <p class="title eng">Chilli Bacon Poke Bowl</p>
+                                    <p class="title kor"><a href="#">칠리베이컨 포케볼</a></p>
+                                </div>
+                            </div>
+
+                            <div class="box">
+                                <a href="#" class="img-box"><img
+                                        src="contents/img/02_menu/wrap_chilli-bacon-poke-wrap.png"
+                                        alt="칠리베이컨 포케랩 이미지"></a>
+                                <div class="title-box">
+                                    <p class="title eng">Chilli Bacon Poke Wrap</p>
+                                    <p class="title kor"><a href="#">칠리베이컨 포케랩</a></p>
+                                </div>
+                            </div>
+
+                            <div class="box">
+                                <a href="#" class="img-box"><img src="contents/img/02_menu/sand_egg-bacon-sand.png"
+                                        alt="에그베이컨 샌드 이미지"></a>
+                                <div class="title-box">
+                                    <p class="title eng">Egg Bacon Sand</p>
+                                    <p class="title kor"><a href="#">에그베이컨 샌드</a></p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="box">
+                                <a href="#" class="img-box"><img
+                                        src="contents/img/02_menu/pbox_double-chicken-breast-pasta-protein-box.png"
+                                        alt="더블 치킨 파스타 박스 이미지"></a>
+                                <div class="title-box">
+                                    <p class="title eng">Double Chicken Breast Pasta Protein Box</p>
+                                    <p class="title kor"><a href="#">더블 치킨 파스타 박스</a></p>
+                                </div>
+                            </div>
+
+                            <div class="box">
+                                <a href="#" class="img-box"><img
+                                        src="contents/img/02_menu/sand_barbeque-chicken-sand.png"
+                                        alt="바베큐닭다리살 샌드 이미지"></a>
+                                <div class="title-box">
+                                    <p class="title eng">Barbeque Chicken Sand</p>
+                                    <p class="title kor"><a href="#">바베큐닭다리살 샌드</a></p>
+                                </div>
+                            </div>
+
+                            <div class="box">
+                                <a href="#" class="img-box"><img
+                                        src="contents/img/02_menu/salad_roast-chicken-thigh-salady.png"
+                                        alt="로스트닭다리살 샐러디 이미지"></a>
+                                <div class="title-box">
+                                    <p class="title eng">Roast Chicken Thigh Salady</p>
+                                    <p class="title kor"><a href="#">로스트닭다리살 샐러디</a></p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="box">
+                                <a href="#" class="img-box"><img
+                                        src="contents/img/02_menu/salad_gravlax-salmon-salady.png"
+                                        alt="그라브락스 연어 샐러디 이미지"></a>
+                                <div class="title-box">
+                                    <p class="title eng">Gravlax Salmon Salady</p>
+                                    <p class="title kor"><a href="#">그라브락스 연어 샐러디</a></p>
+                                </div>
+                            </div>
+
+                            <div class="box">
+                                <a href="#" class="img-box"><img src="contents/img/02_menu/wrap_basil-chicken-wrap.png"
+                                        alt="바질치킨 랩 이미지"></a>
+                                <div class="title-box">
+                                    <p class="title eng">Basil Chicken Wrap</p>
+                                    <p class="title kor"><a href="#">바질치킨 랩</a></p>
+                                </div>
+                            </div>
+
+                            <div class="box">
+                                <a href="#" class="img-box"><img
+                                        src="contents/img/02_menu/bowl_beef-loin-buckwheat-noodles-noodle-bowl.png"
+                                        alt="우삼겹메밀면 누들볼 이미지"></a>
+                                <div class="title-box">
+                                    <p class="title eng">Beef Loin Buckwheat Noodles Noodle Bowl</p>
+                                    <p class="title kor"><a href="#">우삼겹메밀면 누들볼</a></p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="btn prev"><img src="common-img/common_icon_arrow-green_left.png"
+                        alt="다른 메뉴를 더 볼 수 있는 이전 버튼"></div>
+                <div class="btn next"><img src="common-img/common_icon_arrow-green_right.png"
+                        alt="다른 메뉴를 더 볼 수 있는 다음 버튼"></div>
+            </div>
+        </article>
+    </section>
+
+
+    <section class="brand-introduce">
+        <div class="content">
+            <div class="txt">
+                <h2>SALADY.</h2>
+                <p>샐러디는 오로지
+                    기름지고 무거운 식문화에 신선하고 건강한 변화를 가져오고 싶었습니다.<br>
+                    포기하지 않고 즐겁고 건강하게 먹는 샐러드를 제안합니다.</p>
+            </div>
+
+            <a href="contents/brand_bdstory.html" class="btn">Brand Story<img
+                    src="common-img/common_icon_arrow-white_right.png" alt="우측 흰색 화살표 아이콘"></a>
+            <a href="contents/brand_freshsalady.html" class="btn">Fresh Salady<img
+                    src="common-img/common_icon_arrow-white_right.png" alt="우측 흰색 화살표 아이콘"></a>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="wrap">
+            <div class="top">
+                <a href="index.html"><img src="common-img/common_logo-white.png" alt="누르면 메인페이지로 이동하는 샐러디 로고 이미지"></a>
+            </div>
+
+            <div class="btm clear">
+                <div class="info-wrap">
+                    <div class="links">
+                        <p><a href="#">개인정보처리방침</a></p>
+                        <p><a href="#">서비스이용약관</a></p>
+                    </div>
+                    <div class="info">
+                        <p><span class="bold">회사명</span> ㈜샐러디</p>
+                        <p><span class="bold">사업자등록번호</span> 681-86-00031</p>
+                        <p>COPYRIGHT(C) 2022 ㈜샐러디. CO.LTD ALL RIGHT RESERVED.</p>
+                    </div>
+                </div>
+
+                <div class="sns">
+                    <a href="https://www.youtube.com/@saladykorea" class="youtube" target="_blank"><img
+                            src="common-img/common_icon_sns-white_youtube.png" alt="샐러디 유튜브 링크로 들어갈 수 있는 유튜브 아이콘"></a>
+                    <a href="https://www.instagram.com/saladykorea/?n_media=27758&n_query=%EC%83%90%EB%9F%AC%EB%94%94&n_rank=1&n_ad_group=grp-a001-04-000000049617620&n_ad=nad-a001-04-000000376513774&n_keyword_id=nkw-a001-04-000007068628085&n_keyword=%EC%83%90%EB%9F%AC%EB%94%94&n_campaign_type=4&n_contract=tct-a001-04-000000001083789&n_ad_group_type=5&NaPm=ct%3Dmaurbo88%7Cci%3D0yi0000fR2DCOXOnNfi7%7Ctr%3Dbrnd%7Chk%3De37476c24d69d893e8118837e86e827002e67e7d%7Cnacn%3DZoJBBoAJeRYkB"
+                        class="instagram" target="_blank"><img src="common-img/common_icon_sns-white_insta.png"
+                            alt="샐러디 인스타그램 링크로 들어갈 수 있는 인스타그램 아이콘"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 </body>
 

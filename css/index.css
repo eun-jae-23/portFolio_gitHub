@@ -1,1 +1,433 @@
 @charset "utf-8";
+
+/* index.html */
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+/* header 배경 및 텍스트 색상 변경 */
+header {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+header .nav-wrap nav.gnb .gnb-wrap .gnb-box .gnb-name {
+    color: #fff;
+}
+
+header .nav-wrap nav.siteMap .allMenu span {
+    background-color: #fff;
+}
+
+
+/* MAIN********************************************************************************* */
+
+
+main {
+    /* outline: 3px solid red; */
+
+    width: 100%;
+    height: 100%;
+    max-width: 2560px;
+    max-height: 1440px;
+    margin: 0 auto;
+    position: relative;
+    /* main .mid-img의 기준 */
+
+    overflow: hidden;
+}
+
+main .img-box {
+    /* 실제 보여지고 있는 viewer 역할 */
+    width: 50%;
+    height: 100%;
+    float: left;
+    background-color: #000;
+    overflow: hidden;
+}
+
+main .img-box ul {
+    height: 300%;
+    outline: #EF4E4F;
+}
+
+main .img-box ul li {
+    height: 33.33%;
+}
+
+main .img-box ul li img {
+    height: 100%;
+    opacity: 0.5;
+}
+
+main .txt-box {
+    width: 50%;
+    height: 100%;
+    float: right;
+    background-color: #008278;
+    overflow: hidden;
+    color: #fff;
+    position: relative; /* li의 기준 */
+}
+
+main .txt-box ul {
+    height: 100%;
+}
+
+main .txt-box ul li {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 266px;
+    margin-right: 230px;
+    display: none; /* $ 기본 세팅 */
+}
+
+main .txt-box ul li .title-wrap {}
+
+main .txt-box ul li .title-wrap .title-eng {
+    font-family: 'RiaSans-ExtraBold';
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+main .txt-box ul li .title-wrap .title-kor {
+    font-weight: 800;
+    font-size: 70px;
+}
+
+main .txt-box ul li .title-wrap .title-kor .height {}
+
+main .txt-box ul li .title-wrap .title-kor .highlight {
+    background-color: #EF4E4F;
+
+}
+
+main .txt-box ul li .des {
+    margin: 24px 0;
+    line-height: 32px;
+    font-size: 24px;
+}
+
+main .txt-box ul li .btn {
+    display: inline-block;
+    border: 1px solid #fff;
+    border-radius: 40px;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    transition: all 0.3s;
+}
+
+main .txt-box ul li .btn:hover {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+main .txt-box ul li .btn img {
+    display: inline-block;
+    width: 18px;
+    padding: 1px;
+    margin-left: 8px;
+}
+
+
+
+main .mid-img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 430px;
+    transform: translate(-50%, -50%);
+}
+main .mid-img ul {}
+main .mid-img ul li {
+    display: none; /* $ 기본 세팅 */
+}
+main .mid-img ul li img {
+    width: 100%;
+    display: block;
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.15));
+}
+
+
+main .pager {
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 24px;
+}
+
+main .pager .btn, main .pager .pager-status {
+    display: inline-block;
+}
+
+main .pager .btn {
+    vertical-align: middle;
+    width: 24px;
+    height: 24px;
+}
+
+main .pager .btn img {
+    width: 100%;
+}
+
+main .pager .pager-status {}
+
+main .pager .pager-status .num-now,
+main .pager .pager-status .num-last {
+    padding: 0 16px;
+    vertical-align: middle;
+}
+
+main .pager .pager-status .num-now {
+    font-weight: 800;
+}
+
+main .pager .pager-status .status-bar {
+    display: inline-block;
+    width: 300px;
+    height: 2px;
+    position: relative;
+    /* .status-bar::before의 기준 */
+    vertical-align: middle;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+main .pager .pager-status .status-bar .progress-bar {
+    display: inline-block;
+    width: 33.33%;
+    height: 2px;
+    vertical-align: middle;
+    background-color: rgba(255, 255, 255, 1);
+    position: absolute;
+    transition: all 0.7s;
+}
+
+
+main .pager .pager-status .num-last {}
+
+
+
+
+/* SECTION.MENU***************************************************************************************** */
+section.menu {
+    margin: 100px auto;
+    width: 100%;
+    max-width: 2560px;
+}
+
+/* article 2개 똑같은 디자인 */
+.menu article {
+    padding: 100px 0;
+}
+
+.menu article .title-wrap {
+    text-align: center;
+    color: #008278;
+}
+
+.menu article .title-wrap .title {
+    margin-bottom: 10px;
+    font-family: 'RiaSans-ExtraBold';
+    font-size: 64px;
+}
+
+.menu article .title-wrap .des {
+    font-size: 32px;
+}
+
+.menu article .title-wrap .link {
+    display: inline-block;
+    color: #5d5d5d;
+    margin: 30px 0;
+    font-size: 22px;
+}
+
+.menu article .title-wrap .link img {
+    display: inline-block;
+    width: 18px;
+    margin-left: 4px;
+    margin-bottom: 4px;
+    vertical-align: middle;
+}
+
+.menu article .slider-wrap {
+    width: 1460px;
+    margin: 0 auto;
+    position: relative;
+    /* .btn의 기준 */
+}
+
+.menu article .slider-wrap .slider {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* article.new-salady | article.best-salady 각각 총 너비 %  */
+article.new-salady .slider-wrap .slider ul {
+    width: 300%;
+}
+
+article.best-salady .slider-wrap .slider ul {
+    width: 400%;
+}
+
+article.new-salady .slider ul li {
+    width: 33.33%;
+    max-width: 1460px;
+    float: left;
+}
+
+article.best-salady .slider ul li {
+    width: 25%;
+    max-width: 1460px;
+    float: left;
+}
+
+
+.slider ul li .box {
+    width: 31%;
+    float: left;
+}
+
+.slider ul li .box~.box {
+    margin-left: 3.5%;
+}
+
+.slider ul li .box .img-box {
+    display: block;
+    width: 100%;
+}
+
+.slider ul li .box .img-box img {
+    display: block;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.slider ul li .box .title-box {
+    text-align: center;
+    margin-top: 24px;
+}
+
+.slider ul li .box .title-box .title {}
+
+.slider ul li .box .title-box .eng {
+    font-family: 'RiaSans-Regular';
+    font-size: 14px;
+    color: #008278;
+}
+
+.slider ul li .box .title-box .kor {}
+
+.slider ul li .box .title-box .kor a {
+    font-weight: 800;
+    font-size: 36px;
+    color: #008278;
+}
+
+
+/* 좌우 화살표 버튼 */
+.menu article .slider-wrap .btn {
+    width: 70px;
+    height: 70px;
+    padding: 20px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+}
+
+.menu article .slider-wrap .btn:hover {
+    background-color: #008278;
+    border-radius: 40px;
+}
+
+.menu article .slider-wrap .prev {
+    left: -60px;
+    transform: translate(-50%, -50%);
+}
+
+.menu article .slider-wrap .next {
+    right: -60px;
+    transform: translate(50%, -50%);
+}
+
+.menu article .slider-wrap .btn img {
+    width: 100%;
+    display: block;
+}
+
+
+
+
+
+
+/* SECTION.BRAND-INTRODUCE***************************************************************************** */
+.brand-introduce {
+    width: 100%;
+    height: 700px;
+    max-width: 2560px;
+    padding: 276px 230px 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background: url(../img/index-brand-introduce_bg.jpg) no-repeat;
+    background-size: cover;
+    background-position-y: bottom;
+}
+
+.brand-introduce .content {}
+
+.brand-introduce .content .txt {
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+.brand-introduce .content .txt h2 {
+    font-family: 'RiaSans-ExtraBold';
+    font-size: 64px;
+    margin-bottom: 30px;
+}
+
+.brand-introduce .content .txt p {
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+.brand-introduce .btn {
+    display: inline-block;
+    padding: 18px 30px;
+    border: 1px solid #fff;
+    border-radius: 40px;
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-right: 30px;
+}
+
+.brand-introduce .btn:hover {
+    /* hover시 $로 img 우측 화살표 색상 src 바꾸기 */
+    background-color: #fff;
+    color: #008278;
+}
+
+.brand-introduce .btn img {
+    width: 30px;
+    padding: 3px;
+    box-sizing: border-box;
+    margin-left: 8px;
+}
